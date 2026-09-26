@@ -147,7 +147,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 
 | Resource | Link | Description |
 |:---|:---|:---|
-| **Live Application (Vercel)** | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) | Production MVP deployed on Vercel (HTTP 200) |
+| **Live Application (Vercel)** | [https://tradexchain.vercel.app/](https://tradexchain.vercel.app/) | Production MVP deployed on Vercel (HTTP 200) |
 | **Demo Video (Walkthrough)** | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) | Full end-to-end MVP demonstration video |
 | **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) | Public community feedback submission form |
 | **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) | Real-time aggregate feedback response spreadsheet |
