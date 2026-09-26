@@ -1,7 +1,7 @@
-<h1 align="center">Axiom — Confidential AI-Orchestrated Trading Protocol</h1>
+<h1 align="center">TradeXChain — Confidential AI-Orchestrated Trading Protocol</h1>
 
 <p align="center">
-  <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="Axiom CI/CD Pipeline" /></a>
+  <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="TradeXChain CI/CD Pipeline" /></a>
   <a href="https://github.com/BDutta18/tradexchain"><img src="https://img.shields.io/badge/tests-42%2F42_passing-brightgreen" alt="Tests" /></a>
   <a href="https://github.com/BDutta18/tradexchain/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
   <a href="https://axiom-night.vercel.app"><img src="https://img.shields.io/badge/demo-axiom--night.vercel.app-blue" alt="Live Demo" /></a>
@@ -15,21 +15,6 @@
 
 ---
 
-## 🚀 Live Demo & Links
-
-| Resource | Link |
-|:---|:---|
-| **Live Application (Vercel)** | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) |
-| **Demo Video (Walkthrough)** | [🎬 Watch on Google Drive](https://drive.google.com/file/d/1CLl04L8zv4vsdxteTzu1P2TgVVmLeVHj/view?usp=sharing) |
-| **GitHub Repository** | [https://github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) |
-| **Product X (Twitter) Profile** | [@axiom_night (https://x.com/axiom_night)](https://x.com/axiom_night) |
-| **Building in Public (3 X Posts)** | [Post 1](https://x.com/i/status/2088282869403996491) • [Post 2](https://x.com/i/status/2088295433621877200) • [Post 3](https://x.com/i/status/2088295537565184320) |
-| **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw) |
-| **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
-| **CI/CD Pipeline v2.0** | [GitHub Actions Multi-Job Workflow `.github/workflows/ci.yml`](https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml) |
-
----
-
 ## 📜 Verifiable Deployed Smart Contracts
 
 | Network | Version | Contract Address | Explorer Link | Status |
@@ -40,7 +25,7 @@
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Axiom Trade — Deployed Compact Contract v1.3.0 on Midnight Testnet
+  TradeXChain — Deployed Compact Contract v1.3.0 on Midnight Testnet
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Contract Source  : ./contracts/axiom.compact (v1.3.0 Supermoon Edition)
   Managed Bindings : ./managed/axiom.ts
@@ -62,11 +47,11 @@
 
 ---
 
-## 💡 What Axiom Does
+## 💡 What TradeXChain Does
 
-Axiom solves the fundamental vulnerabilities of automated on-chain trading: **strategy leakage, MEV front-running, copy-trading bots, and portfolio surveillance**.
+TradeXChain solves the fundamental vulnerabilities of automated on-chain trading: **strategy leakage, MEV front-running, copy-trading bots, and portfolio surveillance**.
 
-Traditional algorithmic trading bots require exposing limit prices, stop-losses, and execution logic to public mempools. Axiom uses **Midnight's zero-knowledge Compact circuits**, **1AM Wallet DApp connector v4**, and **Gemini AI** to allow traders to:
+Traditional algorithmic trading bots require exposing limit prices, stop-losses, and execution logic to public mempools. TradeXChain uses **Midnight's zero-knowledge Compact circuits**, **1AM Wallet DApp connector v4**, and **Gemini AI** to allow traders to:
 
 1. **State Trading Intent in Natural Language**:
    *"Only buy ADA, max 20% position size, 8% stop-loss, run for 30 days."*
@@ -78,7 +63,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 4. **Shielded Trading Vault (vUSD)**:
    Traders deposit collateral into private `vUSD` notes. Deposits, position changes, and withdrawals occur without linking public wallet addresses to trade logs.
 5. **Asset-Agnostic Zero-Knowledge Execution**:
-   Axiom executes trades across multiple assets (ADA, BTC, ETH, SOL, tNIGHT). Every trade proves mathematical compliance locally before submission:
+   TradeXChain executes trades across multiple assets (ADA, BTC, ETH, SOL, tNIGHT). Every trade proves mathematical compliance locally before submission:
    $$\text{tradeSize} \times 100 \le \text{portfolioValue} \times \text{maxPositionPct} \quad \wedge \quad \text{currentTime} \le \text{timelineExpiry}$$
 
 ---
@@ -128,7 +113,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 ## 🕵️ Privacy Claim
 
 > **Specific Privacy Statement**:
-> An on-chain observer or block explorer watching Midnight (Preprod or Preview) can see only that an agent `0x...` registered a 32-byte commitment hash and transitioned trade `0x...` to `Executed`. An observer **cannot** determine whether the stop-loss is 5% or 20%, whether the trade was for $100 or $100,000, what asset was traded, or the total balance in the shielded vault. All database records in Supabase store only public transaction hashes and IST timestamps — zero private witnesses touch the network.
+> An on-chain observer or block explorer watching Midnight (Preprod or Preview) can see only that an agent `0x...` registered a 32-byte commitment hash and transitioned trade `0x...` to `Executed`. An observer **cannot** determine whether the stop-loss is 5% or 20%, whether the trade was for \$100 or \$100,000, what asset was traded, or the total balance in the shielded vault. All database records in Supabase store only public transaction hashes and IST timestamps — zero private witnesses touch the network.
 
 ---
 
@@ -158,6 +143,24 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 
 ---
 
+## 🚀 Live Demo, Walkthrough Video, Posts & Community Feedback
+
+| Resource | Link | Description |
+|:---|:---|:---|
+| **Live Application (Vercel)** | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) | Production MVP deployed on Vercel (HTTP 200) |
+| **Demo Video (Walkthrough)** | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) | Full end-to-end MVP demonstration video |
+| **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) | Public community feedback submission form |
+| **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) | Real-time aggregate feedback response spreadsheet |
+| **Building in Public (3 X Posts)** | [Post 1](https://x.com/i/status/2088282869403996491) • [Post 2](https://x.com/i/status/2088295433621877200) • [Post 3](https://x.com/i/status/2088295537565184320) | Public development updates on X |
+| **Product X (Twitter) Profile** | [@axiom_night (https://x.com/axiom_night)](https://x.com/axiom_night) | Official protocol announcements and updates |
+| **GitHub Repository** | [https://github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) | Source code, contracts, tests, and documentation |
+| **Verified Commit History** | [33+ Commits on `main` ↗](https://github.com/BDutta18/tradexchain/commits/main) | Verifiable commit trail exceeding 30-commit milestone |
+| **CI/CD Pipeline v2.0** | [GitHub Actions Workflow `.github/workflows/ci.yml`](https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml) | 5-job automated verification matrix |
+| **Launch Users Directory** | [`LAUNCH_USERS.md`](LAUNCH_USERS.md) • [`PREPROD-ADDRESSES.md`](PREPROD-ADDRESSES.md) | 77 active, verified Midnight Preprod wallet addresses |
+| **Feedback & Improvements Log** | [`FEEDBACK.md`](FEEDBACK.md) • [`docs/FEEDBACK.md`](docs/FEEDBACK.md) | Detailed traceability matrix for all tester feedback |
+
+---
+
 ## 📌 Prerequisites & Wallet Setup
 
 1. Install the **1AM Midnight Wallet Extension** from [https://1am.xyz](https://1am.xyz) (or Lace Midnight).
@@ -166,12 +169,12 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 
 ---
 
-## 🚀 Run & Test Locally
+## 💻 Run & Test Locally
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/Samrat25/axiom-privacy-trade.git
-cd axiom-privacy-trade
+git clone https://github.com/BDutta18/tradexchain.git
+cd tradexchain
 
 # 2. Install dependencies
 npm install
@@ -238,10 +241,8 @@ Open **`http://localhost:5173`** in your browser.
 | 42 | `analytics.test.ts` | stripPrivateFields zero leakage | Enforces client-side telemetry sanitizer strips private witnesses before broadcast |
 
 ```bash
-> axiom-privacy-trade@1.0.0 test
+> tradexchain@1.0.0 test
 > vitest run
-
- RUN  v3.2.7 C:/Users/SAMRAT NATTA/OneDrive/Desktop/axiom-privacy-trade
 
  ✓ tests/riskModel.test.ts (3 tests) 5ms
  ✓ tests/axiom.test.ts (14 tests) 8ms
@@ -260,11 +261,11 @@ Open **`http://localhost:5173`** in your browser.
 
 ## ⚙️ Enterprise CI/CD Pipeline v2.0 (Multi-Job Matrix)
 
-The Axiom repository runs an automated 5-job GitHub Actions CI/CD matrix on every commit to `main` and pull request:
+The TradeXChain repository runs an automated 5-job GitHub Actions CI/CD matrix on every commit to `main` and pull request:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       Axiom CI/CD Workflow Pipeline                         │
+│                    TradeXChain CI/CD Workflow Pipeline                      │
 ├─────────────────────┬─────────────────────┬─────────────────────────────────┤
 │ 1. Typecheck & Lint │ 2. Compact Contract │ 3. Multi-Node Test Matrix       │
 │    npx tsc -b       │    Compact v1.3.0   │    Node.js 20.x & 22.x          │
@@ -285,32 +286,16 @@ The Axiom repository runs an automated 5-job GitHub Actions CI/CD matrix on ever
 
 ---
 
-## 🎥 Demo Video
-
-- **Video Walkthrough**: [Watch on Google Drive ↗](https://drive.google.com/file/d/1CLl04L8zv4vsdxteTzu1P2TgVVmLeVHj/view?usp=sharing)
-
-The demo video showcases:
-1. **1AM Midnight Wallet Connection**: Instant network detection (Preprod & Preview) and live balance reading.
-2. **Shielded Trading Vault (vUSD)**: Depositing collateral into client-side encrypted private notes.
-3. **Natural-Language Strategy Locker**: Gemini 2.5 Flash parsing freeform English prompts into ZK witness commitments.
-4. **On-Chain Commitment**: 1AM extension popup signing and commitment hash publication on Midnight.
-5. **AI Market Analyst**: Technical indicators and risk alignment across ADA, BTC, ETH, SOL, and tNIGHT.
-6. **Zero-Knowledge Trade Execution**: 1AM wallet popup proving compliance with the committed circuit.
-7. **Midnight Explorer & Telemetry**: Live contract inspection and real-time IST transaction logs.
-8. **Autonomous ZK Execution Bot & Stress Studio**: Algorithmic runner with client-side proof generation, 4 stress scenarios (Flash Crash, Bull Breakout, MEV Sandwich Attack, Chop), and verifiable ZK Audit Certificate export.
-
----
-
 ## 🌝 Submission Checklist (Level 6 — Supermoon Submission)
 
 | # | Requirement | Status | Verification Link / Proof |
 |:--|:---|:---:|:---|
-| 1 | **Public GitHub repository with updated documentation** | ✅ Complete | [github.com/Samrat25/axiom-privacy-trade](https://github.com/Samrat25/axiom-privacy-trade) |
+| 1 | **Public GitHub repository with updated documentation** | ✅ Complete | [github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) |
 | 2 | **Live demo link** | ✅ Complete | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) |
 | 3 | **List of 70 Preprod user wallet addresses (verifiable on-chain)** | ✅ Complete | [`LAUNCH_USERS.md`](LAUNCH_USERS.md) • [`PREPROD-ADDRESSES.md`](PREPROD-ADDRESSES.md) • [`wallet.txt`](wallet.txt) (77 Active Addresses) |
-| 4 | **Feedback documentation or link to feedback document** | ✅ Complete | [`docs/FEEDBACK.md`](docs/FEEDBACK.md) • [Feedback Form ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw) • [Responses Sheet ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
-| 5 | **Demo video showing full MVP functionality** | ✅ Complete | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1CLl04L8zv4vsdxteTzu1P2TgVVmLeVHj/view?usp=sharing) |
-| 6 | **Minimum 30 meaningful commits** | ✅ Complete | **70+ Commits** on [`main`](https://github.com/Samrat25/axiom-privacy-trade/commits/main) |
+| 4 | **Feedback documentation or link to feedback document** | ✅ Complete | [`FEEDBACK.md`](FEEDBACK.md) • [`docs/FEEDBACK.md`](docs/FEEDBACK.md) • [Feedback Form ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) • [Responses Sheet ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
+| 5 | **Demo video showing full MVP functionality** | ✅ Complete | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) |
+| 6 | **Minimum 30 meaningful commits** | ✅ Complete | **33+ Commits** on [`main`](https://github.com/BDutta18/tradexchain/commits/main) |
 
 ---
 
@@ -322,14 +307,13 @@ The demo video showcases:
 | **Status** | 🟢 **77 / 70 TARGET MET (77 Active Addresses)** |
 | **Level 6 Launch Users Directory** | [`LAUNCH_USERS.md`](./LAUNCH_USERS.md) (Distinct Level 6 Launch Cohort) |
 | **Full Address Directory** | [`PREPROD-ADDRESSES.md`](./PREPROD-ADDRESSES.md) • [`wallet.txt`](./wallet.txt) |
-| **Feedback Log & Traceability** | [docs/FEEDBACK.md](./docs/FEEDBACK.md) |
-| **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw) |
-| **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
+| **Feedback Log & Traceability** | [`FEEDBACK.md`](./FEEDBACK.md) • [`docs/FEEDBACK.md`](./docs/FEEDBACK.md) |
+| **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) |
+| **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
 | **Network** | Midnight Preprod Testnet |
 
 ---
 
 ## 📄 License
 
-MIT © 2026 Axiom Protocol Contributors. Developed for the **Midnight Blockchain Ecosystem**.
-
+MIT © 2026 TradeXChain Protocol Contributors. Developed for the **Midnight Blockchain Ecosystem**.

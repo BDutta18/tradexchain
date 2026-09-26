@@ -2,8 +2,8 @@
 
 > **Milestone**: Level 6 — Supermoon Submission  
 > **Target**: 70+ verified Preprod wallet addresses on Midnight Network  
-> **Official Feedback Form**: [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw)  
-> **Live Responses Spreadsheet**: [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing)  
+> **Official Feedback Form**: [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform)  
+> **Live Responses Spreadsheet**: [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing)  
 > **Launch Users Directory**: [`LAUNCH_USERS.md`](../LAUNCH_USERS.md)  
 
 ---
@@ -22,8 +22,8 @@ Feedback is continuously gathered through a living feedback loop across four str
 
 | Resource | Description | Direct Link |
 |:---|:---|:---:|
-| **Google Form** | Structured feedback questionnaire covering wallet UX, ZK circuit speeds, and trade validation | [Google Form ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw) |
-| **Google Sheets** | Real-time aggregate feedback responses spreadsheet updated with tester submissions | [Google Sheets ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
+| **Google Form** | Structured feedback questionnaire covering wallet UX, ZK circuit speeds, and trade validation | [Google Form ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) |
+| **Google Sheets** | Real-time aggregate feedback responses spreadsheet updated with tester submissions | [Google Sheets ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
 
 ---
 
@@ -59,7 +59,7 @@ Every single improvement below was driven directly by user feedback during the P
 | 2026-08-20 | Preprod tester (#48) | "Wallet addresses in user documentation should be clearly structured and easily verifiable with active testnet status." | Resolved | Maintained in [`LAUNCH_USERS.md`](../LAUNCH_USERS.md) & [`PREPROD-ADDRESSES.md`](../PREPROD-ADDRESSES.md) |
 | 2026-08-21 | Discord tester (#62) | "During fast trade rebalancing, clear logs button helps distinguish fresh zero-knowledge proofs from previous trades." | Resolved | Implemented in `11ddad3` via telemetry log reset |
 | 2026-08-21 | Preprod tester (#71) | "Network mismatch indicator helped catch when 1AM wallet was toggled to Preview instead of Preprod." | Resolved | Implemented in `6cd1a1a` via `NetworkMismatchBanner` |
-| 2026-08-22 | Feedback Form tester | "Verified Google Form submission and confirmed active wallet transactions on Preprod." | Logged | Stored in [Google Sheets Responses](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
+| 2026-08-22 | Feedback Form tester | "Verified Google Form submission and confirmed active wallet transactions on Preprod." | Logged | Stored in [Google Sheets Responses](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
 | 2026-08-23 | Reviewer Feedback | "Split out an explicit Level 6 launch-users list and make Level 6 Improvements traceable to user feedback and visible in code." | Resolved | Created [`LAUNCH_USERS.md`](../LAUNCH_USERS.md) and expanded this traceability section |
 
 ---

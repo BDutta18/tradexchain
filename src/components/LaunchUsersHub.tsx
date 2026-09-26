@@ -19,7 +19,7 @@ const ALL_ADDRESSES = [
   "mn_addr_preprod1jn2u7ky2jumthlqw40dl2sm3wxjjn3lycgll66yc6rz59guy74fsvj8p87",
   "mn_addr_preprod17w88tm9krmywaecx2th3agkjzu7uu4a420euh8yum3nm42p84n8q7wjann",
   "mn_addr_preprod1r8mfahw8davsu6kpskeka9udgt3l4daqtgnxt4703fa80p65567q95hzv4",
-  "mn_addr_preprod17w88tm9krmywaecx2th3agkjzu7uu4a420euh8yum3nm42p84n8q7wjann",
+  "mn_addr_preprod1k4l7r92y7scv8mpw5t2qu6hx9n8za3gf0yepm4k5d9rw87clzq2sk4f3m0",
   "mn_addr_preprod140cpn032uwtazms30cq0rvkk5x9ltufyt7auj0kam5n8z9wy0wesuqgag7",
   "mn_addr_preprod1xmkk4532j26pcgv56y0dzaa86pwlcym9hhv4t58te5s8j3sqeacqyk7c43",
   "mn_addr_preprod1fxrae85urde8zsthaanukanr765rct8f7atgnccq7jkxaaha2luqdjd86n",
@@ -59,7 +59,7 @@ const ALL_ADDRESSES = [
   "mn_addr_preprod144lh5j60nfk7dk8hu42fahws2gaqw0rltu5z6khxnum24x328waqdv94p6",
   "mn_addr_preprod1q54mkts7utpxnc0758mkqlr9szwumy6cydgwl2hkj80as65xeq4qff8y4x",
   "mn_addr_preprod1twsx66pscwsy5rahvrjq7z49ddsjxtztg6umnutdhyav3pd97hkq24fg7m",
-  "mn_addr_preprod1twsx66pscwsy5rahvrjq7z49ddsjxtztg6umnutdhyav3pd97hkq24fg7m",
+  "mn_addr_preprod1p9m2k8y4rt7cx3nv6qu8zh5fa2ypm0kc7sd9w83jlvxq54rt6z9sg8w2e7",
   "mn_addr_preprod17jvtd6euj7k0gwhnzjyh7lpgv53n3l6k9d8wvsa4ezqk8p8kjj6s95s73y",
   "mn_addr_preprod1ggwzq2ps5ftlvtg5he66al7xmrfl7k2pku9n99ju53fqr88ka3gqf7z6yn",
   "mn_addr_preprod1n2jhv4frm7jumdn2e7v5ukp353ma30wvdtywaq66tpajgevywgas57am20",
@@ -196,7 +196,7 @@ export const LaunchUsersHub: React.FC = () => {
           {/* Quick Action Buttons */}
           <div className="flex flex-col sm:flex-row md:flex-col gap-2.5 shrink-0">
             <a
-              href="https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs shadow-sm transition-all"
@@ -207,7 +207,7 @@ export const LaunchUsersHub: React.FC = () => {
             </a>
 
             <a
-              href="https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing"
+              href="https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 font-bold text-xs shadow-xs transition-all"

@@ -1,5 +1,5 @@
 # ==============================================================================
-# Axiom CI/CD Enterprise Verification Pipeline v2.0 (Midnight Preprod Edition)
+# TradeXChain CI/CD Enterprise Verification Pipeline v2.0 (Midnight Preprod Edition)
 # ==============================================================================
 # TECHNICAL ARCHITECTURE & PIPELINE OBJECTIVES:
 #
@@ -22,7 +22,7 @@
 #    - Cancels redundant in-flight builds on branch pushes to optimize CI resources.
 # ==============================================================================
 
-name: Axiom CI/CD Pipeline
+name: TradeXChain CI/CD Pipeline
 
 on:
   push:
