@@ -1,13 +1,9 @@
-<p align="center">
-  <img src="./public/axiom-logo.png" alt="Axiom Trade Logo" width="280" style="border-radius: 12px; background: #ffffff; padding: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);" />
-</p>
-
 <h1 align="center">Axiom — Confidential AI-Orchestrated Trading Protocol</h1>
 
 <p align="center">
-  <a href="https://github.com/Samrat25/axiom-privacy-trade/actions/workflows/ci.yml"><img src="https://github.com/Samrat25/axiom-privacy-trade/actions/workflows/ci.yml/badge.svg" alt="Axiom CI/CD Pipeline" /></a>
-  <a href="https://github.com/Samrat25/axiom-privacy-trade"><img src="https://img.shields.io/badge/tests-42%2F42_passing-brightgreen" alt="Tests" /></a>
-  <a href="https://github.com/Samrat25/axiom-privacy-trade/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
+  <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="Axiom CI/CD Pipeline" /></a>
+  <a href="https://github.com/BDutta18/tradexchain"><img src="https://img.shields.io/badge/tests-42%2F42_passing-brightgreen" alt="Tests" /></a>
+  <a href="https://github.com/BDutta18/tradexchain/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
   <a href="https://axiom-night.vercel.app"><img src="https://img.shields.io/badge/demo-axiom--night.vercel.app-blue" alt="Live Demo" /></a>
   <a href="https://midnight.network"><img src="https://img.shields.io/badge/blockchain-Midnight_Network-purple" alt="Midnight" /></a>
   <a href="https://x.com/axiom_night"><img src="https://img.shields.io/badge/X-@axiom__night-black.svg?logo=x" alt="Product X Profile" /></a>
@@ -25,12 +21,12 @@
 |:---|:---|
 | **Live Application (Vercel)** | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) |
 | **Demo Video (Walkthrough)** | [🎬 Watch on Google Drive](https://drive.google.com/file/d/1CLl04L8zv4vsdxteTzu1P2TgVVmLeVHj/view?usp=sharing) |
-| **GitHub Repository** | [https://github.com/Samrat25/axiom-privacy-trade](https://github.com/Samrat25/axiom-privacy-trade) |
+| **GitHub Repository** | [https://github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) |
 | **Product X (Twitter) Profile** | [@axiom_night (https://x.com/axiom_night)](https://x.com/axiom_night) |
 | **Building in Public (3 X Posts)** | [Post 1](https://x.com/i/status/2088282869403996491) • [Post 2](https://x.com/i/status/2088295433621877200) • [Post 3](https://x.com/i/status/2088295537565184320) |
 | **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw) |
 | **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/18DYi-w9Tj97TKyarRwor4TlHyvXAJjvZLVEQnSFUJas/edit?usp=sharing) |
-| **CI/CD Pipeline v2.0** | [GitHub Actions Multi-Job Workflow `.github/workflows/ci.yml`](https://github.com/Samrat25/axiom-privacy-trade/actions/workflows/ci.yml) |
+| **CI/CD Pipeline v2.0** | [GitHub Actions Multi-Job Workflow `.github/workflows/ci.yml`](https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml) |
 
 ---
 
@@ -137,10 +133,6 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 ---
 
 ## 🏗️ Architecture
-
-<p align="center">
-  <img src="./screenshots/architecture.png" alt="Axiom Architecture Diagram" width="100%" />
-</p>
 
 ### End-to-End Zero-Knowledge Workflow:
 1. **Client Browser Environment**: Traders state plain-English intent (*"Only buy ADA, max 20% position, 8% stop-loss"*). **Gemini 2.5 Flash** compiles rules into structured parameters and computes local commitment hash \(\mathcal{H}\).
@@ -290,40 +282,6 @@ The Axiom repository runs an automated 5-job GitHub Actions CI/CD matrix on ever
 | **3** | `test-matrix` | Ubuntu / Node 20 & 22 | Multi-Node matrix testing across all 42 Vitest tests and privacy suites |
 | **4** | `production-build` | Ubuntu / Node 22 | Production Vite bundle optimization and asset integrity verification |
 | **5** | `privacy-audit` | Ubuntu / Node 22 | Client-side privacy leak audit ensuring 0 private witnesses/keys touch network or logs |
-
----
-
-## 📸 Application Screenshots
-
-### 1. Luxury Landing Page & Protocol Visual Identity
-![Landing Page](./screenshots/landing_page.png)
-
-### 2. Live Protocol Dashboard & Real-Time IST Telemetry
-![Dashboard & Telemetry](./screenshots/dashboard_monitoring.png)
-
-### 3. Autonomous ZK Execution Bot & Institutional Stress Studio
-![ZK Execution Bot & Stress Studio](./screenshots/zk_bot_execution.png)
-
-### 4. Natural-Language Strategy Builder & Pre-Commit AI Risk Engine
-![Strategy Builder](./screenshots/strategy.png)
-
-### 5. Shielded Trading Vault (vUSD) & 1AM Balance Matrix
-![Shielded Vault](./screenshots/vault.png)
-
-### 6. Shielded Portfolio & Client-Side Decrypted P&L Analytics
-![Shielded Portfolio & PnL Analytics](./screenshots/portfolio.png)
-
-### 7. Midnight Explorer Transaction Logs & On-Chain Proofs
-![Trade History & Explorer](./screenshots/trade_history.png)
-
-### 8. AI Market Signals & ZK Trade Execution
-![Market Insights & ZK Trade](./screenshots/market_execute_trade.png)
-
-### 9. Zero-Knowledge Protocol Architecture & State Machine
-![Architecture](./screenshots/architecture.png)
-
-### 10. Verifiable Deployed Contract on Midnight Preprod Explorer
-![Deployed Contract on Midnight Explorer](./screenshots/contract_deployment.png)
 
 ---
 
