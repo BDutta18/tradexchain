@@ -292,7 +292,7 @@ export async function switch1AMNetwork(
           action: "switchNetwork",
           targetNetwork: networkId,
           timestamp: Date.now(),
-          message: `Authorize Axiom on Midnight ${networkId.toUpperCase()}`,
+          message: `Authorize Xenox on Midnight ${networkId.toUpperCase()}`,
         }),
         { encoding: "text" }
       );

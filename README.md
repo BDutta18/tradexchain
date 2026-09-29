@@ -4,7 +4,7 @@
   <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="Xenox Trade CI/CD Pipeline" /></a>
   <a href="https://github.com/BDutta18/tradexchain"><img src="https://img.shields.io/badge/tests-42%2F42_passing-brightgreen" alt="Tests" /></a>
   <a href="https://github.com/BDutta18/tradexchain/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
-  <a href="https://axiom-night.vercel.app"><img src="https://img.shields.io/badge/demo-axiom--night.vercel.app-blue" alt="Live Demo" /></a>
+  <a href="https://tradexchain.vercel.app/"><img src="https://img.shields.io/badge/demo-tradexchain.vercel.app-blue" alt="Live Demo" /></a>
   <a href="https://midnight.network"><img src="https://img.shields.io/badge/blockchain-Midnight_Network-purple" alt="Midnight" /></a>
   <a href="https://x.com/axiom_night"><img src="https://img.shields.io/badge/X-@axiom__night-black.svg?logo=x" alt="Product X Profile" /></a>
 </p>
