@@ -1,5 +1,5 @@
 // ============================================================================
-// Axiom — Compact v1.3.0 Contract Types, ZK State Machine & NLP Utilities
+// Xenox Trade — Compact v1.3.0 Contract Types, ZK State Machine & NLP Utilities
 // ============================================================================
 // TECHNICAL CONTEXT:
 // This module provides the frontend TypeScript interface to the on-chain

@@ -1,5 +1,5 @@
 /**
- * Axiom — Analytics Layer (Level 5)
+ * Xenox Trade — Analytics Layer (Level 5)
  *
  * Records ONLY public, non-sensitive data for real Preprod users:
  *   wallet_address  — public, same as what Midnight Explorer shows

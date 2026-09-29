@@ -1,5 +1,5 @@
 /**
- * Axiom — Midnight Contract Boundary & Transaction Signing
+ * Xenox Trade — Midnight Contract Boundary & Transaction Signing
  *
  * Triggers real wallet transaction signing & fee balancing via injected
  * Midnight extension (1AM / Lace).
@@ -86,7 +86,7 @@ export async function executeSignedTransaction(
   payload: Record<string, unknown>,
 ): Promise<string> {
   if (!_liveWalletApi && isWalletInstalled()) {
-    console.info(`[Axiom TX] Connecting wallet for action '${action}'...`);
+    console.info(`[Xenox TX] Connecting wallet for action '${action}'...`);
     const live = await connect1AMWallet();
     _liveWalletApi = live.api;
     _walletSession = live;
@@ -101,7 +101,7 @@ export async function executeSignedTransaction(
   const activeNet = _walletSession?.networkId || "preview";
   const contractAddress = getActiveContractAddress(activeNet);
 
-  console.info(`[Axiom TX] ── On-Chain Transaction Request ──`);
+  console.info(`[Xenox TX] ── On-Chain Transaction Request ──`);
   console.info(`  Circuit:  ${action}`);
   console.info(`  Contract: ${contractAddress}`);
   console.info(`  Network:  ${activeNet}`);
@@ -113,7 +113,7 @@ export async function executeSignedTransaction(
   // This broadcasts to Midnight chain and creates an entry in the 1AM wallet's TRANSACTIONS tab
   if (typeof api.makeTransfer === "function") {
     try {
-      console.info(`[Axiom TX] Initiating 1AM on-chain transaction for '${action}' on ${activeNet}...`);
+      console.info(`[Xenox TX] Initiating 1AM on-chain transaction for '${action}' on ${activeNet}...`);
       const unshieldedAddr = _walletSession?.address;
       const shieldedAddr = _walletSession?.shieldedAddress;
       const recipient = unshieldedAddr || shieldedAddr || contractAddress;
@@ -133,7 +133,7 @@ export async function executeSignedTransaction(
           kind,
         }
       ]);
-      console.info("[Axiom TX] ✅ 1AM extension popup approved! ProofStation dust-sponsored.");
+      console.info("[Xenox TX] ✅ 1AM extension popup approved! ProofStation dust-sponsored.");
 
       let txPayload: unknown = transferRes;
       if (transferRes && typeof transferRes === "object" && "tx" in (transferRes as Record<string, unknown>)) {
@@ -141,9 +141,9 @@ export async function executeSignedTransaction(
       }
 
       if (txPayload && typeof api.submitTransaction === "function") {
-        console.info(`[Axiom TX] Submitting transaction to Midnight ${activeNet}...`);
+        console.info(`[Xenox TX] Submitting transaction to Midnight ${activeNet}...`);
         const submitRes = await api.submitTransaction.call(_liveWalletApi, txPayload);
-        console.info("[Axiom TX] ✅ Transaction broadcast to Midnight network!");
+        console.info("[Xenox TX] ✅ Transaction broadcast to Midnight network!");
         const hash = extractTxHash(submitRes) || extractTxHash(transferRes);
         if (hash) return hash;
       }
@@ -155,7 +155,7 @@ export async function executeSignedTransaction(
       if (msg.includes("disconnected") || msg.includes("User rejected") || msg.includes("cancelled") || msg.includes("denied")) {
         throw new Error(`Transaction cancelled by user in wallet popup. Action: ${action}`);
       }
-      console.warn("[Axiom TX] makeTransfer notice, trying signData fallback:", msg);
+      console.warn("[Xenox TX] makeTransfer notice, trying signData fallback:", msg);
     }
 
   }
@@ -164,7 +164,7 @@ export async function executeSignedTransaction(
   // 2. Secondary path: signData — triggers 1AM extension signature popup
   if (typeof api.signData === "function") {
     try {
-      console.info(`[Axiom TX] Requesting 1AM signature popup for '${action}'...`);
+      console.info(`[Xenox TX] Requesting 1AM signature popup for '${action}'...`);
       const payloadString = JSON.stringify({
         action,
         contractAddress,
@@ -175,7 +175,7 @@ export async function executeSignedTransaction(
       }, null, 2);
 
       const sigRes = await api.signData.call(_liveWalletApi, payloadString, { encoding: "text" });
-      console.info("[Axiom TX] ✅ 1AM extension popup approved and signed!");
+      console.info("[Xenox TX] ✅ 1AM extension popup approved and signed!");
       return await deriveHashFromResponse(sigRes);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "signData failed";

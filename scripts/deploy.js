@@ -1,5 +1,5 @@
 /**
- * Axiom — Versioned Compact Contract Deployment Script
+ * Xenox Trade — Versioned Compact Contract Deployment Script
  * Compiles contracts/axiom.compact and appends versioned deployment entry to deployments/registry.json.
  *
  * Usage:
@@ -22,7 +22,7 @@ if (targetNetwork !== 'preview' && targetNetwork !== 'preprod') {
 }
 
 console.log(`================================================================`);
-console.log(`Axiom Contract Deployment — Network: Midnight ${targetNetwork.toUpperCase()}`);
+console.log(`Xenox Trade Contract Deployment — Network: Midnight ${targetNetwork.toUpperCase()}`);
 console.log(`================================================================`);
 
 // 1. Compile Compact Contract

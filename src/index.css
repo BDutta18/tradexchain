@@ -347,7 +347,7 @@ html, body {
     transparent calc(50% + .85 * var(--u)));
 }
 
-/* Meet Axiom Pill */
+/* Meet Xenox Pill */
 .meet {
   width: calc(269 * var(--u));
   height: calc(86 * var(--u));

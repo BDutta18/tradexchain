@@ -1,5 +1,5 @@
 /**
- * Axiom — Network-Aware RPC Transaction Confirmation
+ * Xenox Trade — Network-Aware RPC Transaction Confirmation
  *
  * Reads RPC endpoint URL and API key from environment variables:
  *   - VITE_RPC_URL / RPC_URL

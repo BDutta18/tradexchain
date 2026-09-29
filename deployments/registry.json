@@ -1,4 +1,25 @@
 {
+  "xenox": {
+    "preprod": [
+      {
+        "version": "1.3.0",
+        "contractAddress": "0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc",
+        "deployedAt": "2026-09-26T00:00:00.000Z",
+        "commitHash": "0x08d1be213257a83e669706eef0f0645269264549",
+        "circuits": [
+          "commitStrategy",
+          "executeTrade",
+          "executeBatchRebalance",
+          "tripCircuitBreaker",
+          "resetCircuitBreaker",
+          "revokeStrategy",
+          "mintVaultBalance",
+          "burnVaultBalance",
+          "unshieldWithdraw"
+        ]
+      }
+    ]
+  },
   "axiom": {
     "preprod": [
       {

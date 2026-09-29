@@ -6,7 +6,7 @@ const SERVICE_ROLE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
 async function setup() {
-  console.log('[Axiom Setup] Checking axiom_events table...');
+  console.log('[Xenox Setup] Checking axiom_events table...');
   const { data, error } = await supabase.from('axiom_events').select('id').limit(1);
 
   if (!error) {

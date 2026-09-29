@@ -1,5 +1,5 @@
 /**
- * Axiom — Real-Time Market Price Feed
+ * Xenox Trade — Real-Time Market Price Feed
  * Fetches live market data from public price oracles (CoinGecko / Binance)
  * with graceful fallback to real cached price feeds.
  */
@@ -160,7 +160,7 @@ export async function fetchLiveMarketData(): Promise<LiveMarketAsset[]> {
       },
     ];
   } catch (err) {
-    console.info('[Axiom Market] Using local fallback market feed:', err);
+    console.info('[Xenox Market] Using local fallback market feed:', err);
     return DEFAULT_ASSETS;
   }
 }

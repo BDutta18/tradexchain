@@ -1,5 +1,5 @@
 /**
- * Axiom — Supabase Dedicated Backend Database & Public Ledger Sync
+ * Xenox Trade — Supabase Dedicated Backend Database & Public Ledger Sync
  *
  * All strategy commitments, trade executions, and logs are persisted
  * directly in Supabase (https://zzrkbimybbuzrrzdheac.supabase.co).
@@ -31,7 +31,7 @@ export function getSupabaseClient(): SupabaseClient | null {
       _supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
       return _supabaseClient;
     } catch (err) {
-      console.warn('[Axiom Supabase] Failed to initialize Supabase client:', err);
+      console.warn('[Xenox Supabase] Failed to initialize Supabase client:', err);
       return null;
     }
   }
@@ -116,12 +116,12 @@ export async function syncStrategyCommitment(record: PublicStrategyCommitmentRec
     };
     const { error } = await client.from('strategy_commitments').insert([payload]);
     if (error) {
-      console.warn('[Axiom Supabase] syncStrategyCommitment error:', error.message);
+      console.warn('[Xenox Supabase] syncStrategyCommitment error:', error.message);
     } else {
-      console.info('[Axiom Supabase] ✅ Strategy commitment synced to Supabase:', record.commitment_hash);
+      console.info('[Xenox Supabase] ✅ Strategy commitment synced to Supabase:', record.commitment_hash);
     }
   } catch (err) {
-    console.warn('[Axiom Supabase] syncStrategyCommitment exception:', err);
+    console.warn('[Xenox Supabase] syncStrategyCommitment exception:', err);
   }
 }
 
@@ -155,7 +155,7 @@ export async function fetchPersistedStrategies(walletAddress?: string): Promise<
         return mapped;
       }
     } catch (err) {
-      console.warn('[Axiom Supabase] fetchPersistedStrategies failed, using memory:', err);
+      console.warn('[Xenox Supabase] fetchPersistedStrategies failed, using memory:', err);
     }
   }
 
@@ -182,12 +182,12 @@ export async function syncTradeExecution(record: PublicTradeExecutionRecord): Pr
     };
     const { error } = await client.from('trade_executions').insert([payload]);
     if (error) {
-      console.warn('[Axiom Supabase] syncTradeExecution error:', error.message);
+      console.warn('[Xenox Supabase] syncTradeExecution error:', error.message);
     } else {
-      console.info('[Axiom Supabase] ✅ Trade execution synced to Supabase:', record.trade_id);
+      console.info('[Xenox Supabase] ✅ Trade execution synced to Supabase:', record.trade_id);
     }
   } catch (err) {
-    console.warn('[Axiom Supabase] syncTradeExecution exception:', err);
+    console.warn('[Xenox Supabase] syncTradeExecution exception:', err);
   }
 }
 
@@ -226,7 +226,7 @@ export async function fetchPersistedTrades(agentId?: string): Promise<TradeRecor
         }));
       }
     } catch (err) {
-      console.warn('[Axiom Supabase] fetchPersistedTrades failed, using memory:', err);
+      console.warn('[Xenox Supabase] fetchPersistedTrades failed, using memory:', err);
     }
   }
 
@@ -259,10 +259,10 @@ export async function clearSupabaseWalletData(walletAddress?: string): Promise<v
   try {
     if (walletAddress) {
       await client.from('strategy_commitments').delete().eq('wallet_address', walletAddress);
-      console.info(`[Axiom Supabase] Cleared strategy commitments for wallet: ${walletAddress}`);
+      console.info(`[Xenox Supabase] Cleared strategy commitments for wallet: ${walletAddress}`);
     }
   } catch (err) {
-    console.warn('[Axiom Supabase] clearSupabaseWalletData warning:', err);
+    console.warn('[Xenox Supabase] clearSupabaseWalletData warning:', err);
   }
 }
 
@@ -297,12 +297,12 @@ export async function syncWalletVaultBalance(walletAddress: string, balance: num
     ]);
 
     if (error) {
-      console.warn('[Axiom Supabase] syncWalletVaultBalance error:', error.message);
+      console.warn('[Xenox Supabase] syncWalletVaultBalance error:', error.message);
     } else {
-      console.info(`[Axiom Supabase] ✅ Vault balance ($${balance} vUSD) synced for wallet:`, walletAddress);
+      console.info(`[Xenox Supabase] ✅ Vault balance ($${balance} vUSD) synced for wallet:`, walletAddress);
     }
   } catch (err) {
-    console.warn('[Axiom Supabase] syncWalletVaultBalance exception:', err);
+    console.warn('[Xenox Supabase] syncWalletVaultBalance exception:', err);
   }
 }
 
@@ -328,7 +328,7 @@ export async function fetchWalletVaultBalance(walletAddress: string): Promise<nu
         return parsed;
       }
     } catch (err) {
-      console.warn('[Axiom Supabase] fetchWalletVaultBalance failed, using memory:', err);
+      console.warn('[Xenox Supabase] fetchWalletVaultBalance failed, using memory:', err);
     }
   }
 

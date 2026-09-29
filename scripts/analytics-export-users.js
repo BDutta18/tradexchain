@@ -43,7 +43,7 @@ async function exportUsers() {
   console.log('');
   console.log('Target: 50 verified wallet addresses on Midnight Preprod');
   console.log('');
-  console.log('> Automatically captured from real Preprod transactions on https://axiom-night.vercel.app');
+  console.log('> Automatically captured from real Preprod transactions on https://tradexchain.vercel.app/');
   console.log('> Verifiable on https://explorer.1am.xyz?network=preprod');
   console.log('');
   console.log('| #  | Wallet Address | First Transaction | 1AM Explorer |');

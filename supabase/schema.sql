@@ -1,5 +1,5 @@
 -- ============================================================================
--- Axiom — Midnight ZK Trade History & Strategy Commitments Database Schema
+-- Xenox Trade — Midnight ZK Trade History & Strategy Commitments Database Schema
 -- Project URL: https://zzrkbimybbuzrrzdheac.supabase.co
 -- Execute this SQL in your Supabase SQL Editor (https://supabase.com/dashboard)
 -- ============================================================================

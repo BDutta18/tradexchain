@@ -1,4 +1,4 @@
-# Axiom — Usage Guide
+# Xenox Trade — Usage Guide
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ docker run -d -p 6300:6300 --name midnight-proof-server midnightnetwork/proof-se
 
 ## Step 2: Connect Your Wallet
 
-1. Open the Axiom app at `http://localhost:5173`.
+1. Open the Xenox Trade app at `http://localhost:5173`.
 2. Click **Connect 1AM Wallet** in the top-right.
 3. The 1AM browser extension popup will open — click **Approve**.
 4. Your wallet address, balances (tNIGHT, tDUST), and network will appear.
@@ -25,7 +25,7 @@ docker run -d -p 6300:6300 --name midnight-proof-server midnightnetwork/proof-se
 ### Multiple wallets installed?
 
 If you have both 1AM and Lace installed, the app will show a wallet selection UI.
-Axiom enumerates all installed wallets via the DApp Connector API — it never
+Xenox Trade enumerates all installed wallets via the DApp Connector API — it never
 hardcodes a single wallet key.
 
 ## Step 3: Fund Your Wallet (if needed)
@@ -66,6 +66,6 @@ Each trade is verified against your committed strategy bounds via a ZK proof.
 | "Proof server not running" | Start Docker: `docker run -d -p 6300:6300 midnightnetwork/proof-server:latest` |
 | "1AM wallet not detected" | Install from [1am.xyz](https://1am.xyz), unlock the extension, refresh the page |
 | "Insufficient tDUST" | Use the [Midnight Faucet](https://faucet.preview.midnight.network) or switch to 1AM wallet (ProofStation sponsored) |
-| "Wallet UI disconnected" | Refresh the page and reconnect. Ensure only one Axiom tab is open |
+| "Wallet UI disconnected" | Refresh the page and reconnect. Ensure only one Xenox Trade tab is open |
 | "GOOGLE_API_KEY missing" | Add `VITE_GOOGLE_API_KEY=your_key` to `.env` for AI strategy parsing |
 | Brave browser issues | Disable Brave shields for localhost |

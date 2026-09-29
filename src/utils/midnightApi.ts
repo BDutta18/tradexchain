@@ -1,5 +1,5 @@
 // ============================================================================
-// Axiom — Midnight Explorer API & URL Builders
+// Xenox Trade — Midnight Explorer API & URL Builders
 // ============================================================================
 
 export const MIDNIGHT_EXPLORER_API_KEY = 'm9ex_d923ae0b71403342a93521e796467688d98fcd6575d15d6181eb1f7f2a033a15';

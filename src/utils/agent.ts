@@ -1,5 +1,5 @@
 // ============================================================================
-// Axiom — Privacy-First Browser-Compatible Trading Agent (Gemini Powered)
+// Xenox Trade — Privacy-First Browser-Compatible Trading Agent (Gemini Powered)
 // ============================================================================
 // MANDATORY PRIVACY SECURITY ENFORCEMENT:
 // LangSmith tracing is NOT used — private strategy thresholds, portfolio
@@ -63,7 +63,7 @@ export function createGeminiLLM(apiKeyOverride?: string, modelName: SupportedGem
 
   if (!apiKey) {
     throw new Error(
-      '[Axiom Agent] GOOGLE_API_KEY is missing. ' +
+      '[Xenox Agent] GOOGLE_API_KEY is missing. ' +
       'Set VITE_GOOGLE_API_KEY in your .env file to use the AI strategy parser. ' +
       'Example: VITE_GOOGLE_API_KEY=AIzaSy...'
     );
@@ -95,7 +95,7 @@ export async function invokeWithModelFallback<T>(
       if (msg.includes('GOOGLE_API_KEY is missing')) {
         throw err;
       }
-      console.warn(`[Axiom Agent] Model ${model} invocation attempt failed, trying fallback:`, msg);
+      console.warn(`[Xenox Agent] Model ${model} invocation attempt failed, trying fallback:`, msg);
     }
   }
   throw lastError;
@@ -140,7 +140,7 @@ export async function parseStrategyNode(state: AgentState): Promise<Partial<Agen
       commitmentHash: hash
     };
   } catch (err) {
-    console.warn('[Axiom Agent] Gemini LLM call failed, using regex fallback parser:', err);
+    console.warn('[Xenox Agent] Gemini LLM call failed, using regex fallback parser:', err);
     const prompt = state.naturalLanguagePrompt.toLowerCase();
     let asset = 'ADA';
     if (prompt.includes('btc')) asset = 'BTC';
@@ -325,7 +325,7 @@ export async function runStrategyRiskAssessment(params: {
 
     return result;
   } catch (err) {
-    console.warn('[Axiom Agent] Gemini LLM risk assessment fallback used:', err);
+    console.warn('[Xenox Agent] Gemini LLM risk assessment fallback used:', err);
     return getFallbackAssessment();
   }
 }
@@ -373,7 +373,7 @@ export async function runManualAnalysis(
 
     return result;
   } catch (err) {
-    console.warn('[Axiom Agent] Gemini LLM recommendation fallback:', err);
+    console.warn('[Xenox Agent] Gemini LLM recommendation fallback:', err);
     return {
       recommendation: `Conditions match your committed strategy rules for ${asset}. Current ${asset} price is $${basePrice}. Proposed trade size: $${suggestedSize} (within your ${params.maxPositionPct}% max position limit of $${maxAllowedSize}).`,
       suggestedAction: 'BUY',
@@ -444,7 +444,7 @@ export async function runComprehensiveRiskAnalysis(
       ]);
     });
   } catch (err) {
-    console.warn('[Axiom Agent] Gemini LLM comprehensive analysis fallback:', err);
+    console.warn('[Xenox Agent] Gemini LLM comprehensive analysis fallback:', err);
     return {
       regime: fallbackRegime,
       confidenceScore: 94,

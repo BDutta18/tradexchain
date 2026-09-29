@@ -1,5 +1,5 @@
 /**
- * Axiom — Indian Standard Time (IST) Formatting Utilities
+ * Xenox Trade — Indian Standard Time (IST) Formatting Utilities
  *
  * Timezone: Asia/Kolkata (UTC +05:30)
  */

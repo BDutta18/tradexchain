@@ -1,5 +1,5 @@
 // ============================================================================
-// Axiom — Midnight Preprod Contract Deployment Script
+// Xenox Trade — Midnight Preprod Contract Deployment Script
 // ============================================================================
 // Executes real contract deployment to Midnight Preprod Testnet.
 // Requires: Preprod wallet seed / 1AM wallet private key with tNIGHT balance.
@@ -9,7 +9,7 @@ import fs from 'fs';
 import path from 'path';
 
 console.log('====================================================');
-console.log('🚀 Axiom Midnight Preprod Contract Deployer');
+console.log('🚀 Xenox Trade Midnight Preprod Contract Deployer');
 console.log('====================================================');
 
 const zkirDir = path.resolve('./managed/zkir');
@@ -32,7 +32,7 @@ console.log('Proof Server:    http://localhost:6300');
 
 console.log('\n--- Deployment Instructions ---');
 console.log('1. Ensure 1AM Wallet is set to Preprod network with tNIGHT balance.');
-console.log('2. Open the Axiom dApp in browser (http://localhost:5173).');
+console.log('2. Open the Xenox Trade dApp in browser (http://localhost:5173).');
 console.log('3. Click "Connect 1AM Wallet" -> "Commit Strategy On-Chain".');
 console.log('4. 1AM Wallet will prompt you to authorize the on-chain contract deployment transaction.');
 console.log('5. Once confirmed, copy the resulting transaction/contract address from 1AM Wallet into README.md.');

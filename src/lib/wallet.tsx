@@ -33,7 +33,7 @@ const WalletContext = createContext<WalletState | null>(null);
 const MOCK_ADDRESS =
   "addr_mn1qxk93lz7wq0pv4t2ug8j3d5n6r0yc9hs2fa7bxe4mq8u3vd7k2p9lt6zn1cw";
 
-const STORAGE_KEY = "axiom.wallet.connected";
+const STORAGE_KEY = "xenox.wallet.connected";
 
 function mockConnect(): Promise<{ address: string; balance: number }> {
   return new Promise((resolve, reject) => {

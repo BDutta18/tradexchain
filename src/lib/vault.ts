@@ -1,5 +1,5 @@
 /**
- * Axiom — Shielded Vault (mintVaultBalance / burnVaultBalance)
+ * Xenox Trade — Shielded Vault (mintVaultBalance / burnVaultBalance)
  *
  * ASSUMPTION: This simulates the Midnight shield/unshield pattern for a
  * USDC-equivalent "vault balance." No actual USDC bridging, DEX routing,
@@ -21,7 +21,7 @@ export function setLocalVaultBalance(balance: number, walletAddress?: string): v
   _shieldedVaultBalance = Math.max(0, balance);
   if (walletAddress) {
     syncWalletVaultBalance(walletAddress, _shieldedVaultBalance).catch((err) =>
-      console.warn('[Axiom Vault] Sync error:', err)
+      console.warn('[Xenox Vault] Sync error:', err)
     );
   }
 }
@@ -30,7 +30,7 @@ export function addToLocalVaultBalance(amount: number, walletAddress?: string): 
   _shieldedVaultBalance += Math.max(0, amount);
   if (walletAddress) {
     syncWalletVaultBalance(walletAddress, _shieldedVaultBalance).catch((err) =>
-      console.warn('[Axiom Vault] Sync error:', err)
+      console.warn('[Xenox Vault] Sync error:', err)
     );
   }
   return _shieldedVaultBalance;
@@ -40,7 +40,7 @@ export function subtractFromLocalVaultBalance(amount: number, walletAddress?: st
   _shieldedVaultBalance = Math.max(0, _shieldedVaultBalance - amount);
   if (walletAddress) {
     syncWalletVaultBalance(walletAddress, _shieldedVaultBalance).catch((err) =>
-      console.warn('[Axiom Vault] Sync error:', err)
+      console.warn('[Xenox Vault] Sync error:', err)
     );
   }
   return _shieldedVaultBalance;

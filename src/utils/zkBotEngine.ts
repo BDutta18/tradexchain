@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * Axiom ZK Execution Bot & Institutional Backtesting Engine
+ * Xenox Trade ZK Execution Bot & Institutional Backtesting Engine
  * ============================================================================
  * Provides an autonomous algorithmic execution simulator and stress-testing
  * suite for confidential trading strategies committed to Midnight Network.

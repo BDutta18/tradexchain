@@ -7,7 +7,7 @@ import {
 } from '../src/utils/agent';
 import { StrategyParams } from '../src/utils/contract';
 
-describe('Axiom Level 6 Multi-Regime ZK Risk Analyst & Model Fallback', () => {
+describe('Xenox Trade Level 6 Multi-Regime ZK Risk Analyst & Model Fallback', () => {
   const conservativeParams: StrategyParams = {
     asset: 'ADA',
     maxPositionPct: 15,

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/xenox-logo.png" alt="Xenox Trade Logo" width="220" />
+</p>
+
 <h1 align="center">Xenox Trade — Confidential AI-Orchestrated Trading Protocol</h1>
 
 <p align="center">
@@ -6,7 +10,7 @@
   <a href="https://github.com/BDutta18/tradexchain/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
   <a href="https://tradexchain.vercel.app/"><img src="https://img.shields.io/badge/demo-tradexchain.vercel.app-blue" alt="Live Demo" /></a>
   <a href="https://midnight.network"><img src="https://img.shields.io/badge/blockchain-Midnight_Network-purple" alt="Midnight" /></a>
-  <a href="https://x.com/axiom_night"><img src="https://img.shields.io/badge/X-@axiom__night-black.svg?logo=x" alt="Product X Profile" /></a>
+  <a href="https://x.com/Xenoxtradex"><img src="https://img.shields.io/badge/X-@Xenoxtradex-black.svg?logo=x" alt="Product X Profile" /></a>
 </p>
 
 > An institutional-grade, privacy-preserving automated trading protocol on the **Midnight blockchain** where traders state risk boundaries in natural language and prove trade execution in Zero-Knowledge — with zero strategy rules, portfolio balances, or order sizes exposed to mempools.
@@ -148,8 +152,8 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 | **Demo Video (Walkthrough)** | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) | Full end-to-end MVP demonstration video |
 | **User Feedback Form** | [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) | Public community feedback submission form |
 | **Feedback Responses Sheet** | [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) | Real-time aggregate feedback response spreadsheet |
-| **Building in Public (3 X Posts)** | [Post 1](https://x.com/i/status/2088282869403996491) • [Post 2](https://x.com/i/status/2088295433621877200) • [Post 3](https://x.com/i/status/2088295537565184320) | Public development updates on X |
-| **Product X (Twitter) Profile** | [@axiom_night (https://x.com/axiom_night)](https://x.com/axiom_night) | Official protocol announcements and updates |
+| **Building in Public (3 X Posts)** | [Post 1](https://x.com/Xenoxtradex/status/2104932713061130243) • [Post 2](https://x.com/Xenoxtradex/status/2104934932707705219) • [Post 3](https://x.com/Xenoxtradex/status/2104936036568883641) | Public development updates on X |
+| **Product X (Twitter) Profile** | [@Xenoxtradex (https://x.com/Xenoxtradex)](https://x.com/Xenoxtradex) | Official protocol announcements and updates |
 | **GitHub Repository** | [https://github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) | Source code, contracts, tests, and documentation |
 | **Verified Commit History** | [33+ Commits on `main` ↗](https://github.com/BDutta18/tradexchain/commits/main) | Verifiable commit trail exceeding 30-commit milestone |
 | **CI/CD Pipeline v2.0** | [GitHub Actions Workflow `.github/workflows/ci.yml`](https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml) | 5-job automated verification matrix |
@@ -288,7 +292,7 @@ The Xenox Trade repository runs an automated 5-job GitHub Actions CI/CD matrix o
 | # | Requirement | Status | Verification Link / Proof |
 |:--|:---|:---:|:---|
 | 1 | **Public GitHub repository with updated documentation** | ✅ Complete | [github.com/BDutta18/tradexchain](https://github.com/BDutta18/tradexchain) |
-| 2 | **Live demo link** | ✅ Complete | [https://axiom-night.vercel.app](https://axiom-night.vercel.app) |
+| 2 | **Live demo link** | ✅ Complete | [https://tradexchain.vercel.app/](https://tradexchain.vercel.app/) |
 | 3 | **List of 70 Preprod user wallet addresses (verifiable on-chain)** | ✅ Complete | [`LAUNCH_USERS.md`](LAUNCH_USERS.md) • [`PREPROD-ADDRESSES.md`](PREPROD-ADDRESSES.md) • [`wallet.txt`](wallet.txt) (77 Active Addresses) |
 | 4 | **Feedback documentation or link to feedback document** | ✅ Complete | [`FEEDBACK.md`](FEEDBACK.md) • [`docs/FEEDBACK.md`](docs/FEEDBACK.md) • [Feedback Form ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) • [Responses Sheet ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
 | 5 | **Demo video showing full MVP functionality** | ✅ Complete | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) |

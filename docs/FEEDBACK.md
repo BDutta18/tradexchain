@@ -13,7 +13,7 @@
 Feedback is continuously gathered through a living feedback loop across four structured tiers:
 1. **Official Google Form**: Standardized survey collecting quantitative ratings (wallet connect speed, proof generation latency, trade confidence) and qualitative suggestions.
 2. **Public Google Sheets Log**: Automated real-time aggregation of community feedback submissions.
-3. **Direct Developer & Community Outreach**: X (@axiom_night) DMs, Telegram alpha tester group (@cryptodev, @midnight_trader), and Midnight Dev Discord channels.
+3. **Direct Developer & Community Outreach**: X (@Xenoxtradex) DMs, Telegram alpha tester group (@cryptodev, @midnight_trader), and Midnight Dev Discord channels.
 4. **On-Chain & In-App Telemetry**: Client-side execution telemetry on Midnight Preprod testnet across 70+ active testers.
 
 ---

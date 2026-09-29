@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { validateEvent, stripPrivateFields, OPERATION_TYPES } from '../src/lib/analytics';
 
-describe('Axiom Analytics — Privacy Strip & Validation', () => {
+describe('Xenox Trade Analytics — Privacy Strip & Validation', () => {
   const validBase = {
     client_event_id: 'test-uuid-1234',
     wallet_address: '0xabc123def456',

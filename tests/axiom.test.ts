@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { AxiomContractSimulator, StrategyWitnesses } from '../managed/axiom';
 
-describe('Axiom Compact Smart Contract Privacy & Verification Suite', () => {
+describe('Xenox Trade Compact Smart Contract Privacy & Verification Suite', () => {
   const defaultWitnesses: StrategyWitnesses = {
     getStrategyAsset: () => 'ADA',
     getMaxPositionPct: () => 20,

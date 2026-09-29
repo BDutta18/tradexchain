@@ -1,5 +1,5 @@
 /**
- * Axiom — Midnight Wallet & Protocol Hook
+ * Xenox Trade — Midnight Wallet & Protocol Hook
  *
  * Delegates all wallet detection/connection/signing to:
  *   - src/lib/lace-wallet.ts (wallet adapter layer)
@@ -237,7 +237,7 @@ export function useMidnight() {
           delay = Math.min(delay * 2, 30000);
           // Single silent log at the first sign of syncing
           if (delay <= 7000) {
-            console.info('[Axiom Wallet] 1AM wallet syncing — polling will slow down until sync completes.');
+            console.info('[Xenox Wallet] 1AM wallet syncing — polling will slow down until sync completes.');
           }
         } else {
           // Other error — keep current delay, clear syncing flag
@@ -304,7 +304,7 @@ export function useMidnight() {
       void postEvent({ client_event_id: newEventId(), wallet_address: live.address || live.shieldedAddress || 'unknown', operation: 'wallet_connected', status: 'success', network: live.network || targetNetwork });
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Wallet connection failed';
-      console.error('[Axiom] Wallet connection error:', err);
+      console.error('[Xenox] Wallet connection error:', err);
       setError(msg);
       setWalletConnected(false);
       addLog('error', 'Connection Failed', msg);
@@ -335,7 +335,7 @@ export function useMidnight() {
         await clearSupabaseWalletData();
       }
     } catch (e) {
-      console.warn('[Axiom] Supabase clear warning:', e);
+      console.warn('[Xenox] Supabase clear warning:', e);
     }
 
     addLog('info', 'Wallet Data Cleared', 'Wallet session closed and data reset in Supabase backend.');
@@ -372,7 +372,7 @@ export function useMidnight() {
       );
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Network switch failed';
-      console.error('[Axiom] Network switch error:', err);
+      console.error('[Xenox] Network switch error:', err);
       setError(msg);
       addLog('error', 'Network Switch Failed', msg);
     } finally {
@@ -502,14 +502,14 @@ export function useMidnight() {
         tx_hash: txHash,
         created_at: newStrategy.createdAt,
         status: 'active',
-      }).catch((e) => console.warn('[Axiom Sync] Strategy sync error:', e));
+      }).catch((e) => console.warn('[Xenox Sync] Strategy sync error:', e));
 
       addLog('success', 'Strategy Committed', `TX: ${txHash} | Hash: ${hash}`);
       void postEvent({ client_event_id: newEventId(), wallet_address: session?.shieldedAddress || session?.address || 'unknown', operation: 'strategy_committed', status: 'success', tx_hash: txHash, network: (session?.network as string) || networkId });
       return hash;
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Strategy commitment failed';
-      console.error('[Axiom] Commit strategy error:', err);
+      console.error('[Xenox] Commit strategy error:', err);
       setError(msg);
       addLog('error', 'Circuit Failed', msg);
       throw err;
@@ -626,7 +626,7 @@ export function useMidnight() {
         status: newTrade.status,
         proof_time_ms: newTrade.proofTimeMs,
         timestamp: newTrade.timestamp,
-      }).catch((e) => console.warn('[Axiom Sync] Trade sync error:', e));
+      }).catch((e) => console.warn('[Xenox Sync] Trade sync error:', e));
 
       addLog('success', 'Trade Proven', `Trade ${newTrade.id} — ${asset} $${tradeSizeUsd} — TX: ${txHash}`);
       void postEvent({ client_event_id: newEventId(), wallet_address: session?.shieldedAddress || session?.address || 'unknown', operation: 'trade_executed', status: 'success', tx_hash: txHash, network: networkId });

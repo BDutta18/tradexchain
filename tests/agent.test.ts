@@ -8,7 +8,7 @@ import {
 } from '../src/utils/agent';
 import { StrategyParams } from '../src/utils/contract';
 
-describe('Axiom LangGraph Trading Agent Decision Engine Suite', () => {
+describe('Xenox Trade LangGraph Trading Agent Decision Engine Suite', () => {
   const sampleParams: StrategyParams = {
     asset: 'ADA',
     maxPositionPct: 20,

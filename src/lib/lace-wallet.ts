@@ -1,5 +1,5 @@
 /**
- * Axiom — 1AM / Lace Midnight Wallet Adapter (v4.x DApp Connector API)
+ * Xenox Trade — 1AM / Lace Midnight Wallet Adapter (v4.x DApp Connector API)
  * Ported from freight-veil's proven working pattern.
  *
  * NEVER hardcodes a single wallet key. Enumerates all installed wallets
@@ -139,7 +139,7 @@ export async function connect1AMWallet(
     const keys = typeof window !== "undefined" && window.midnight ? Object.keys(window.midnight) : [];
     if (keys.length > 0) {
       const fallbackApi = window.midnight![keys[0]];
-      console.info(`[Axiom Wallet] Connecting via fallback wallet entry '${keys[0]}'...`);
+      console.info(`[Xenox Wallet] Connecting via fallback wallet entry '${keys[0]}'...`);
       const connected = await fallbackApi.connect(networkId);
       return parseConnectedSession(connected, networkId, fallbackApi.name || keys[0], fallbackApi.apiVersion);
     }
@@ -149,7 +149,7 @@ export async function connect1AMWallet(
     );
   }
 
-  console.info(`[Axiom Wallet] Connecting to 1AM wallet on network '${networkId}'...`);
+  console.info(`[Xenox Wallet] Connecting to 1AM wallet on network '${networkId}'...`);
   const connectedAPI = await wallet.connect(networkId);
   return parseConnectedSession(connectedAPI, networkId, wallet.name || "1AM", wallet.apiVersion);
 }
@@ -244,7 +244,7 @@ export async function fetchWalletBalances(connectedAPI: Midnight1AMConnectedAPI)
       }
     }
   } catch (e) {
-    console.warn("[Axiom Wallet] getShieldedBalances warning:", e);
+    console.warn("[Xenox Wallet] getShieldedBalances warning:", e);
   }
 
   try {
@@ -258,14 +258,14 @@ export async function fetchWalletBalances(connectedAPI: Midnight1AMConnectedAPI)
       }
     }
   } catch (e) {
-    console.warn("[Axiom Wallet] getUnshieldedBalances warning:", e);
+    console.warn("[Xenox Wallet] getUnshieldedBalances warning:", e);
   }
 
   try {
     const dustRes = await connectedAPI.getDustBalance();
     tDust = parseBalanceValue(dustRes);
   } catch (e) {
-    console.warn("[Axiom Wallet] getDustBalance warning:", e);
+    console.warn("[Xenox Wallet] getDustBalance warning:", e);
   }
 
   return { tNightShielded, tNightUnshielded, tDust };
@@ -280,13 +280,13 @@ export async function switch1AMNetwork(
     throw new Error("1AM wallet extension not detected.");
   }
 
-  console.info(`[Axiom Wallet] Requesting 1AM network switch to '${networkId}'...`);
+  console.info(`[Xenox Wallet] Requesting 1AM network switch to '${networkId}'...`);
   const connectedAPI = await wallet.connect(networkId);
 
   // Trigger 1AM wallet extension popup for network activation
   if (typeof connectedAPI.signData === "function") {
     try {
-      console.info(`[Axiom Wallet] Triggering 1AM authorization popup for '${networkId}'...`);
+      console.info(`[Xenox Wallet] Triggering 1AM authorization popup for '${networkId}'...`);
       await connectedAPI.signData(
         JSON.stringify({
           action: "switchNetwork",
@@ -296,9 +296,9 @@ export async function switch1AMNetwork(
         }),
         { encoding: "text" }
       );
-      console.info(`[Axiom Wallet] ✅ 1AM extension popup approved for '${networkId}'!`);
+      console.info(`[Xenox Wallet] ✅ 1AM extension popup approved for '${networkId}'!`);
     } catch (err: unknown) {
-      console.warn("[Axiom Wallet] 1AM popup sign notice:", err);
+      console.warn("[Xenox Wallet] 1AM popup sign notice:", err);
     }
   }
 
@@ -321,7 +321,7 @@ async function parseConnectedSession(
     const res = await connectedAPI.getUnshieldedAddress();
     unshieldedAddress = extractAddressString(res);
   } catch (e) {
-    console.warn("[Axiom Wallet] getUnshieldedAddress error:", e);
+    console.warn("[Xenox Wallet] getUnshieldedAddress error:", e);
   }
 
   let shieldedAddress = "";
@@ -332,7 +332,7 @@ async function parseConnectedSession(
     shieldedAddress = extractAddressString(res);
     coinPublicKey = extractCoinPublicKey(res);
   } catch (e) {
-    console.warn("[Axiom Wallet] getShieldedAddresses error:", e);
+    console.warn("[Xenox Wallet] getShieldedAddresses error:", e);
   }
 
   let dustAddress = "";
@@ -340,7 +340,7 @@ async function parseConnectedSession(
     const res = await connectedAPI.getDustAddress();
     dustAddress = extractAddressString(res);
   } catch (e) {
-    console.warn("[Axiom Wallet] getDustAddress error:", e);
+    console.warn("[Xenox Wallet] getDustAddress error:", e);
   }
 
   // Fallback to state() if available
@@ -365,7 +365,7 @@ async function parseConnectedSession(
     const vals = Object.values(sBals || {});
     if (vals.length > 0) tNightShielded = parseBalanceValue(vals[0]);
   } catch (e) {
-    console.warn("[Axiom Wallet] getShieldedBalances warning:", e);
+    console.warn("[Xenox Wallet] getShieldedBalances warning:", e);
   }
 
   try {
@@ -373,14 +373,14 @@ async function parseConnectedSession(
     const vals = Object.values(uBals || {});
     if (vals.length > 0) tNightUnshielded = parseBalanceValue(vals[0]);
   } catch (e) {
-    console.warn("[Axiom Wallet] getUnshieldedBalances warning:", e);
+    console.warn("[Xenox Wallet] getUnshieldedBalances warning:", e);
   }
 
   try {
     const dustRes = await connectedAPI.getDustBalance();
     tDust = parseBalanceValue(dustRes);
   } catch (e) {
-    console.warn("[Axiom Wallet] getDustBalance warning:", e);
+    console.warn("[Xenox Wallet] getDustBalance warning:", e);
   }
 
   // Configuration
@@ -446,7 +446,7 @@ export async function signAuthChallenge(
       );
       return `1am_sig_${typeof sig === "string" ? sig : JSON.stringify(sig)}`;
     } catch (err) {
-      console.warn("[Axiom Wallet] signData fallback used:", err);
+      console.warn("[Xenox Wallet] signData fallback used:", err);
     }
   }
   const stub = btoa(`${challenge.slice(0, 32)}`).replace(/[+/=]/g, "");

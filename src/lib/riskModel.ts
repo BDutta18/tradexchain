@@ -1,5 +1,5 @@
 /**
- * Axiom — EZKL ZK-ML Risk Eligibility Model
+ * Xenox Trade — EZKL ZK-ML Risk Eligibility Model
  *
  * Evaluates trade risk against internal risk boundaries:
  *   - Inputs: volatilityPct (0-100), positionSizePct (0-100), stopLossDistancePct (0-100)

@@ -7,7 +7,7 @@ import {
   type BotConfig
 } from '../src/utils/zkBotEngine';
 
-describe('Axiom ZK Execution Bot & Institutional Backtest Studio', () => {
+describe('Xenox Trade ZK Execution Bot & Institutional Backtest Studio', () => {
   const mockConfig: BotConfig = {
     agentId: '0x111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000',
     asset: 'tNIGHT',
