@@ -72,7 +72,7 @@ export function App() {
       {activeTab === 'landing' ? (
         <LandingPage
           onConnectWallet={() => setIsModalOpen(true)}
-          onEnterDashboard={(tab?: string) => setActiveTab(tab || 'overview')}
+          onEnterDashboard={() => setActiveTab('overview')}
           walletConnected={walletConnected}
           walletAddress={walletAddress}
         />
