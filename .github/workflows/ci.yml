@@ -22,7 +22,7 @@
 #    - Cancels redundant in-flight builds on branch pushes to optimize CI resources.
 # ==============================================================================
 
-name: TradeXChain CI/CD Pipeline
+name: Xenox Trade CI/CD Pipeline
 
 on:
   push:

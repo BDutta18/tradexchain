@@ -50,8 +50,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
         <div className="flex items-center gap-4">
           <div className="h-14 px-3.5 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0">
             <img
-              src="/axiom-logo.png"
-              alt="Axiom Trade Logo"
+              src="/xenox-logo.png"
+              alt="Xenox Trade Logo"
               className="h-9 w-auto object-contain"
             />
           </div>

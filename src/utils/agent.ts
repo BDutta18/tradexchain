@@ -114,7 +114,7 @@ export async function parseStrategyNode(state: AgentState): Promise<Partial<Agen
       {
         role: 'system',
         content:
-          'You are Axiom Midnight NLP Parser. Extract bounded trading parameters strictly matching the requested Zod JSON schema.'
+          'You are Xenox Midnight NLP Parser. Extract bounded trading parameters strictly matching the requested Zod JSON schema.'
       },
       {
         role: 'user',
@@ -315,7 +315,7 @@ export async function runStrategyRiskAssessment(params: {
       {
         role: 'system',
         content:
-          'You are Axiom ZK Risk Assessor. Evaluate proposed trading strategy rules (max position %, stop loss %, duration) before on-chain commitment. Return a concise, plain-language risk read.'
+          'You are Xenox ZK Risk Assessor. Evaluate proposed trading strategy rules (max position %, stop loss %, duration) before on-chain commitment. Return a concise, plain-language risk read.'
       },
       {
         role: 'user',
@@ -363,7 +363,7 @@ export async function runManualAnalysis(
     const result = await structuredLlm.invoke([
       {
         role: 'system',
-        content: 'You are Axiom ZK Trading Agent. Provide a plain-language trade recommendation based on the committed strategy bounds, selected trade asset, and current market price.'
+        content: 'You are Xenox ZK Trading Agent. Provide a plain-language trade recommendation based on the committed strategy bounds, selected trade asset, and current market price.'
       },
       {
         role: 'user',
@@ -435,7 +435,7 @@ export async function runComprehensiveRiskAnalysis(
       return await structuredLlm.invoke([
         {
           role: 'system',
-          content: 'You are Axiom Level 6 Multi-Regime ZK Risk Analyst on Midnight. Evaluate current market trends, volatility regimes, and prove mathematical compliance with committed Compact circuit bounds.'
+          content: 'You are Xenox Level 6 Multi-Regime ZK Risk Analyst on Midnight. Evaluate current market trends, volatility regimes, and prove mathematical compliance with committed Compact circuit bounds.'
         },
         {
           role: 'user',

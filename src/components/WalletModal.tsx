@@ -84,8 +84,8 @@ export const WalletModal: React.FC<WalletModalProps> = ({
         <div className="flex items-center gap-3">
           <div className="h-12 px-3 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0">
             <img
-              src="/axiom-logo.png"
-              alt="Axiom Trade Logo"
+              src="/xenox-logo.png"
+              alt="Xenox Trade Logo"
               className="h-8 w-auto object-contain"
             />
           </div>
@@ -223,7 +223,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({
                       1AM Extension Running on Midnight {detected1AMNetwork.toUpperCase()}
                     </p>
                     <p className="text-amber-800 leading-relaxed text-[11px]">
-                      Your 1AM extension dropdown is set to <strong>{detected1AMNetwork.toUpperCase()}</strong>, while Axiom is targeting <strong>{networkId.toUpperCase()}</strong>.
+                      Your 1AM extension dropdown is set to <strong>{detected1AMNetwork.toUpperCase()}</strong>, while Xenox is targeting <strong>{networkId.toUpperCase()}</strong>.
                     </p>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({
                   className="w-full py-2 px-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1.5"
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
-                  <span>Switch Axiom Target to {detected1AMNetwork.toUpperCase()}</span>
+                  <span>Switch Xenox Target to {detected1AMNetwork.toUpperCase()}</span>
                 </button>
               </div>
             )}

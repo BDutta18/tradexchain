@@ -47,8 +47,8 @@ export const VaultPanel: React.FC<VaultPanelProps> = ({
         <div className="flex items-center gap-4">
           <div className="h-14 w-14 rounded-2xl bg-orange-50 border border-orange-200/80 shadow-xs flex items-center justify-center shrink-0">
             <img
-              src="/axiom-icon-mark.png"
-              alt="Axiom Mark"
+              src="/xenox-icon-mark.png"
+              alt="Xenox Mark"
               className="h-9 w-auto object-contain"
             />
           </div>

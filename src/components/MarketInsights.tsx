@@ -80,7 +80,7 @@ export const MarketInsights: React.FC<MarketInsightsProps> = ({
         const response = await llm.invoke([
           {
             role: 'system',
-            content: 'You are Axiom AI Market Analyst. Provide concise, professional technical analysis for crypto traders using zero-knowledge privacy bounds.'
+            content: 'You are Xenox AI Market Analyst. Provide concise, professional technical analysis for crypto traders using zero-knowledge privacy bounds.'
           },
           { role: 'user', content: prompt }
         ]);
@@ -100,7 +100,7 @@ export const MarketInsights: React.FC<MarketInsightsProps> = ({
       const recStopLoss = currentStrategy?.params.stopLossPct || (assetSymbol === 'BTC' ? 6 : 8);
 
       const generatedAnalysis = 
-`⚡ Axiom AI Technical Analysis for ${assetSymbol} ($${price.toLocaleString()}):
+`⚡ Xenox AI Technical Analysis for ${assetSymbol} ($${price.toLocaleString()}):
 
 • Market Structure: ${assetSymbol} is currently in a ${sentiment.toLowerCase()} posture (${isPositive ? '+' : ''}${change}% 24h change) testing short-term support and moving average bands.
 • ZK Position Recommendation: Allocation of ${recMaxPos}% ($${Math.floor((vaultBalance * recMaxPos) / 100).toLocaleString()} vUSD) strictly aligns with your on-chain risk rules.
@@ -305,7 +305,7 @@ export const MarketInsights: React.FC<MarketInsightsProps> = ({
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-gray-900 uppercase tracking-wider flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-orange-500" />
-                  Axiom AI Market Intelligence
+                  Xenox AI Market Intelligence
                 </span>
                 <span className="text-xs text-emerald-800 font-bold bg-emerald-100 px-2.5 py-0.5 rounded-full">
                   Confidence: {selectedData.confidence}%

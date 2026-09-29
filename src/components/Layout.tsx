@@ -92,15 +92,15 @@ export const Layout: React.FC<LayoutProps> = ({
             >
               <div className="h-11 sm:h-12 px-3 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0 group-hover:border-[#3C1868]/40 transition-colors">
                 <img
-                  src="/axiom-logo.png"
-                  alt="Axiom Trade Logo"
+                  src="/xenox-logo.png"
+                  alt="Xenox Trade Logo"
                   className="h-8 sm:h-9 w-auto object-contain group-hover:scale-105 transition-transform"
                 />
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
                   <span className="text-xs sm:text-sm font-extrabold text-[#020C21] tracking-tight leading-none">
-                    AXIOM TRADE
+                    XENOX TRADE
                   </span>
                   <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-[#0F1B31] text-white uppercase tracking-wider">
                     {networkId}
@@ -243,8 +243,8 @@ export const Layout: React.FC<LayoutProps> = ({
         <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3 overflow-x-auto no-scrollbar">
             <div className="flex items-center gap-2">
-              <img src="/axiom-logo.png" alt="Axiom Trade Logo" className="h-4.5 w-auto object-contain" />
-              <span className="font-bold text-[#020C21]">AXIOM TRADE</span>
+              <img src="/xenox-logo.png" alt="Xenox Trade Logo" className="h-4.5 w-auto object-contain" />
+              <span className="font-bold text-[#020C21]">XENOX TRADE</span>
             </div>
             <span className="text-gray-300">•</span>
             {latestBlockHeight && (

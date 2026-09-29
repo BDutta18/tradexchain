@@ -184,7 +184,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             {/* HEADER ROW */}
             <div className="row">
               <a className="brand l t" style={{ '--x': 68, '--y': 47 } as React.CSSProperties} href="#hero">
-                <img className="mark" src="/axiom-logo.png" alt="Axiom Trade Logo" />
+                <img className="mark" src="/xenox-logo.png" alt="Xenox Trade Logo" />
               </a>
 
               <button
@@ -273,7 +273,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span className="p-title sx" style={{ '--sx': 0.8707 } as React.CSSProperties}>AI-Driven</span>
                 <span className="dot" />
                 <div className="shield">
-                  <img src="/axiom-icon-mark.png" alt="Axiom ZK Shield" style={{ width: 'calc(38 * var(--u))', height: 'calc(44 * var(--u))', objectFit: 'contain' }} />
+                  <img src="/xenox-icon-mark.png" alt="Xenox ZK Shield" style={{ width: 'calc(38 * var(--u))', height: 'calc(44 * var(--u))', objectFit: 'contain' }} />
                 </div>
                 <p className="p-sub sx" style={{ '--sx': 0.8899 } as React.CSSProperties}>
                   Autonomous<br />ZK Risk Engine<br />& Execution Guard
@@ -319,12 +319,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               >
                 <span className="thumb">
                   <img
-                    alt="Axiom Core"
+                    alt="Xenox Core"
                     style={{ objectPosition: '60% 50%' }}
-                    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260912_105822_bf7c2d53-9957-4521-bbbf-7c1ab7a70130.png"
+                    src="/xenox-icon-mark.png"
                   />
                 </span>
-                <b>Meet Axiom</b>
+                <b>Meet Xenox</b>
                 <span className="knob">
                   <svg viewBox="0 0 18 18" fill="none" aria-hidden="true">
                     <path d="m6.6 3.6 6 5.4-6 5.4" stroke="#fff" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
@@ -551,17 +551,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         <div className="max-w-[1320px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3.5">
             <div className="h-13 px-3.5 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0">
-              <img src="/axiom-logo.png" alt="Axiom Trade" className="h-9 w-auto object-contain" />
+              <img src="/xenox-logo.png" alt="Xenox Trade" className="h-9 w-auto object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="font-extrabold text-[#020C21] tracking-tight text-sm">AXIOM TRADE</span>
+              <span className="font-extrabold text-[#020C21] tracking-tight text-sm">XENOX TRADE</span>
               <span className="text-[10px] text-gray-500">Confidential AI-Orchestrated Trading Protocol • Midnight Preprod</span>
             </div>
           </div>
 
           <div className="flex items-center gap-6">
             <a
-              href="https://explorer.1am.xyz/contract/2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524?network=preprod"
+              href="https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc"
               target="_blank"
               rel="noreferrer"
               className="hover:text-[#020C21] transition-colors flex items-center gap-1 font-medium"
@@ -570,7 +570,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <ExternalLink className="w-3 h-3 text-gray-400" />
             </a>
             <a
-              href="https://docs.google.com/forms/d/1N8tk4NR4at56WroUt_5jyger578DWpgcueMCqPD2HEw"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform"
               target="_blank"
               rel="noreferrer"
               className="hover:text-[#020C21] transition-colors font-medium"

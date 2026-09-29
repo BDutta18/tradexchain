@@ -68,8 +68,8 @@ describe('Axiom ZK Execution Bot & Institutional Backtest Studio', () => {
     const result = runScenarioBacktest(mockConfig, 'bull_surge');
     const cert = generateZKAuditCertificate(mockConfig, result);
 
-    expect(cert.certificateId).toMatch(/^AXIOM-CERT-[A-Z0-9]+-\d+$/);
-    expect(cert.contractAddress).toBe('0x2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524');
+    expect(cert.certificateId).toMatch(/^XENOX-CERT-[A-Z0-9]+-\d+$/);
+    expect(cert.contractAddress).toBe('0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc');
     expect(cert.network).toBe('Midnight Preprod Testnet');
     expect(cert.strategyCommitmentHash).toMatch(/^0x[a-f0-9]{64}$/);
     expect(cert.verificationHash).toMatch(/^0x[a-f0-9]{64}$/);

@@ -1,7 +1,7 @@
-<h1 align="center">TradeXChain — Confidential AI-Orchestrated Trading Protocol</h1>
+<h1 align="center">Xenox Trade — Confidential AI-Orchestrated Trading Protocol</h1>
 
 <p align="center">
-  <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="TradeXChain CI/CD Pipeline" /></a>
+  <a href="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml"><img src="https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml/badge.svg" alt="Xenox Trade CI/CD Pipeline" /></a>
   <a href="https://github.com/BDutta18/tradexchain"><img src="https://img.shields.io/badge/tests-42%2F42_passing-brightgreen" alt="Tests" /></a>
   <a href="https://github.com/BDutta18/tradexchain/tree/main/contracts"><img src="https://img.shields.io/badge/Compact%20Contract-v1.3.0%20(Supermoon)-blueviolet" alt="Compact v1.3.0" /></a>
   <a href="https://axiom-night.vercel.app"><img src="https://img.shields.io/badge/demo-axiom--night.vercel.app-blue" alt="Live Demo" /></a>
@@ -19,18 +19,15 @@
 
 | Network | Version | Contract Address | Explorer Link | Status |
 |:--------|:--------|:-----------------|:--------------|:-------|
-| **Midnight Preprod Testnet** | `v1.3.0` | `0x2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524` | [View on 1AM Preprod Explorer ↗](https://explorer.1am.xyz/contract/2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524?network=preprod) | 🟢 **ACTIVE PREPROD MVP (v1.3.0 Supermoon)** |
-| **Midnight Preview Testnet** | `v1.3.0` | `0x33eb41d22028264e9e8bbe7f95b3089cece6e3c2a53008535e72a9f3350d3e30` | [View on 1AM Preview Explorer ↗](https://explorer.1am.xyz/contract/33eb41d22028264e9e8bbe7f95b3089cece6e3c2a53008535e72a9f3350d3e30?network=preview) | 🟢 **ACTIVE PREVIEW MVP (v1.3.0 Supermoon)** |
-| **Historical Deployment** | `v1.0.0` | `0x62a27ceda5eb600263e208768d5d285c659d47f2cd6b14a20c62b160f4da46f3` | [View on 1AM Explorer ↗](https://explorer.1am.xyz/contract/62a27ceda5eb600263e208768d5d285c659d47f2cd6b14a20c62b160f4da46f3?network=preview) | 🟡 *Historical (Vault v1)* |
+| **Midnight Preprod Testnet** | `v1.3.0` | `0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc` | [View on 1AM Preprod Explorer ↗](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) | 🟢 **ACTIVE PREPROD MVP (v1.3.0 Supermoon)** |
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  TradeXChain — Deployed Compact Contract v1.3.0 on Midnight Testnet
+  Xenox Trade — Deployed Compact Contract v1.3.0 on Midnight Testnet
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Contract Source  : ./contracts/axiom.compact (v1.3.0 Supermoon Edition)
   Managed Bindings : ./managed/axiom.ts
-  Preprod Contract : 0x2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524
-  Preview Contract : 0x33eb41d22028264e9e8bbe7f95b3089cece6e3c2a53008535e72a9f3350d3e30
+  Preprod Contract : 0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
   Active Circuits  : commitStrategy, tripCircuitBreaker, resetCircuitBreaker,
                      executeTrade, executeBatchRebalance, revokeStrategy,
                      mintVaultBalance, burnVaultBalance, unshieldWithdraw
@@ -47,11 +44,11 @@
 
 ---
 
-## 💡 What TradeXChain Does
+## 💡 What Xenox Trade Does
 
-TradeXChain solves the fundamental vulnerabilities of automated on-chain trading: **strategy leakage, MEV front-running, copy-trading bots, and portfolio surveillance**.
+Xenox Trade solves the fundamental vulnerabilities of automated on-chain trading: **strategy leakage, MEV front-running, copy-trading bots, and portfolio surveillance**.
 
-Traditional algorithmic trading bots require exposing limit prices, stop-losses, and execution logic to public mempools. TradeXChain uses **Midnight's zero-knowledge Compact circuits**, **1AM Wallet DApp connector v4**, and **Gemini AI** to allow traders to:
+Traditional algorithmic trading bots require exposing limit prices, stop-losses, and execution logic to public mempools. Xenox Trade uses **Midnight's zero-knowledge Compact circuits**, **1AM Wallet DApp connector v4**, and **Gemini AI** to allow traders to:
 
 1. **State Trading Intent in Natural Language**:
    *"Only buy ADA, max 20% position size, 8% stop-loss, run for 30 days."*
@@ -63,7 +60,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 4. **Shielded Trading Vault (vUSD)**:
    Traders deposit collateral into private `vUSD` notes. Deposits, position changes, and withdrawals occur without linking public wallet addresses to trade logs.
 5. **Asset-Agnostic Zero-Knowledge Execution**:
-   TradeXChain executes trades across multiple assets (ADA, BTC, ETH, SOL, tNIGHT). Every trade proves mathematical compliance locally before submission:
+   Xenox Trade executes trades across multiple assets (ADA, BTC, ETH, SOL, tNIGHT). Every trade proves mathematical compliance locally before submission:
    $$\text{tradeSize} \times 100 \le \text{portfolioValue} \times \text{maxPositionPct} \quad \wedge \quad \text{currentTime} \le \text{timelineExpiry}$$
 
 ---
@@ -113,7 +110,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 ## 🕵️ Privacy Claim
 
 > **Specific Privacy Statement**:
-> An on-chain observer or block explorer watching Midnight (Preprod or Preview) can see only that an agent `0x...` registered a 32-byte commitment hash and transitioned trade `0x...` to `Executed`. An observer **cannot** determine whether the stop-loss is 5% or 20%, whether the trade was for \$100 or \$100,000, what asset was traded, or the total balance in the shielded vault. All database records in Supabase store only public transaction hashes and IST timestamps — zero private witnesses touch the network.
+> An on-chain observer or block explorer watching Midnight Preprod can see only that an agent `0x...` registered a 32-byte commitment hash and transitioned trade `0x...` to `Executed`. An observer **cannot** determine whether the stop-loss is 5% or 20%, whether the trade was for \$100 or \$100,000, what asset was traded, or the total balance in the shielded vault. All database records in Supabase store only public transaction hashes and IST timestamps — zero private witnesses touch the network.
 
 ---
 
@@ -122,7 +119,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 ### End-to-End Zero-Knowledge Workflow:
 1. **Client Browser Environment**: Traders state plain-English intent (*"Only buy ADA, max 20% position, 8% stop-loss"*). **Gemini 2.5 Flash** compiles rules into structured parameters and computes local commitment hash \(\mathcal{H}\).
 2. **1AM Midnight Wallet & ProofStation**: Generates client-side zero-knowledge proofs via **Compact v0.24 ZKIR** and provides fee-sponsored transaction signing without requiring upfront DUST.
-3. **Midnight Blockchain (Preprod & Preview)**: Verifies the ZK proof and updates public state maps (`agentCommitment`, `tradeStatus`, `tradeCount`) while keeping strategy rules, portfolio balances, and trade sizes 100% confidential.
+3. **Midnight Blockchain (Preprod)**: Verifies the ZK proof and updates public state maps (`agentCommitment`, `tradeStatus`, `tradeCount`) while keeping strategy rules, portfolio balances, and trade sizes 100% confidential.
 
 ---
 
@@ -130,7 +127,7 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 
 | Layer | Technology | Description |
 |:---|:---|:---|
-| **Blockchain** | Midnight Network | Preprod & Preview Zero-Knowledge Testnets |
+| **Blockchain** | Midnight Network | Preprod Zero-Knowledge Testnet |
 | **Smart Contract** | Compact v0.24 (ZKIR) v1.3.0 | Midnight's native ZK language with circuit breakers & MEV shield |
 | **SDK & Connector** | `@midnight-ntwrk/dapp-connector-api` | Midnight DApp Connector v4 for 1AM & Lace |
 | **AI Decision Engine** | Gemini 2.5 Flash + LangChain | Natural language strategy compilation & multi-regime risk analysis |
@@ -164,8 +161,8 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 ## 📌 Prerequisites & Wallet Setup
 
 1. Install the **1AM Midnight Wallet Extension** from [https://1am.xyz](https://1am.xyz) (or Lace Midnight).
-2. Open 1AM and select **Midnight Preprod** or **Midnight Preview** network.
-3. Fund your wallet with testnet tokens from the [Midnight Preview Faucet](https://faucet.preview.midnight.network) or [Preprod Faucet](https://faucet.preprod.midnight.network).
+2. Open 1AM and select **Midnight Preprod** network.
+3. Fund your wallet with testnet tokens from the [Preprod Faucet](https://faucet.preprod.midnight.network).
 
 ---
 
@@ -261,11 +258,11 @@ Open **`http://localhost:5173`** in your browser.
 
 ## ⚙️ Enterprise CI/CD Pipeline v2.0 (Multi-Job Matrix)
 
-The TradeXChain repository runs an automated 5-job GitHub Actions CI/CD matrix on every commit to `main` and pull request:
+The Xenox Trade repository runs an automated 5-job GitHub Actions CI/CD matrix on every commit to `main` and pull request:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    TradeXChain CI/CD Workflow Pipeline                      │
+│                    Xenox Trade CI/CD Workflow Pipeline                      │
 ├─────────────────────┬─────────────────────┬─────────────────────────────────┤
 │ 1. Typecheck & Lint │ 2. Compact Contract │ 3. Multi-Node Test Matrix       │
 │    npx tsc -b       │    Compact v1.3.0   │    Node.js 20.x & 22.x          │
@@ -316,4 +313,4 @@ The TradeXChain repository runs an automated 5-job GitHub Actions CI/CD matrix o
 
 ## 📄 License
 
-MIT © 2026 TradeXChain Protocol Contributors. Developed for the **Midnight Blockchain Ecosystem**.
+MIT © 2026 Xenox Trade Protocol Contributors. Developed for the **Midnight Blockchain Ecosystem**.

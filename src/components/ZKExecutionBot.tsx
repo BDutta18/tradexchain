@@ -73,7 +73,7 @@ export const ZKExecutionBot: React.FC<ZKExecutionBotProps> = ({
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const tickCounterRef = useRef<number>(1);
 
-  const effectiveAgentId = walletAddress || '0x2428cd4ae7c2cd0bb501e1e9162de3003b103c1063c220e0d5cfc3f0b438e524';
+  const effectiveAgentId = walletAddress || '0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc';
 
   const currentConfig: BotConfig = {
     agentId: effectiveAgentId,
@@ -264,8 +264,8 @@ export const ZKExecutionBot: React.FC<ZKExecutionBotProps> = ({
           <div className="flex items-start gap-4">
             <div className="h-14 w-14 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0">
               <img
-                src="/axiom-icon-mark.png"
-                alt="Axiom Mark"
+                src="/xenox-icon-mark.png"
+                alt="Xenox Mark"
                 className="h-9 w-auto object-contain"
               />
             </div>
@@ -823,8 +823,8 @@ export const ZKExecutionBot: React.FC<ZKExecutionBotProps> = ({
             <div className="flex items-start gap-4">
               <div className="h-14 px-3 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-center shrink-0">
                 <img
-                  src="/axiom-logo.png"
-                  alt="Axiom Trade Logo"
+                  src="/xenox-logo.png"
+                  alt="Xenox Trade Logo"
                   className="h-8 w-auto object-contain"
                 />
               </div>
