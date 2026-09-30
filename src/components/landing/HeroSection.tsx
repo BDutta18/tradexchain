@@ -103,7 +103,6 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
                     </span>
                   ))}
                 </span>
-                <span className="absolute -bottom-2 left-0 right-0 h-3 bg-blue-100 -z-10" />
               </span>
               <span className="text-slate-500 italic ml-4 font-normal">in Zero-Knowledge.</span>
             </span>
@@ -127,7 +126,7 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <div className="mb-3 text-center">
+          <div className="mb-3 flex items-center justify-start">
             <span className="text-[11px] font-mono uppercase tracking-widest text-[#1E3A8A] bg-blue-50/80 border border-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2 font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               On-Chain Execution Simulator

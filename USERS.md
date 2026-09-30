@@ -6,6 +6,8 @@
 > **Level 5 Cohort**: 50 Alpha Users (#1–#50)  
 > **Feedback Form**: [Submit Preprod Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform)  
 > **Feedback Sheet**: [View Preprod Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing)  
+> **Product X (Twitter) Profile**: [@Xenoxtradex (https://x.com/Xenoxtradex)](https://x.com/Xenoxtradex)  
+> **Building in Public (3 X Posts)**: [Post 1](https://x.com/Xenoxtradex/status/2104932713061130243) • [Post 2](https://x.com/Xenoxtradex/status/2104934932707705219) • [Post 3](https://x.com/Xenoxtradex/status/2104936036568883641)  
 
 ---
 

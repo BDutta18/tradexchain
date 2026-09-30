@@ -13,17 +13,14 @@ export function FooterSection() {
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
-          {/* Logo & Xenox Brand */}
+          {/* Logo ONLY */}
           <div className="flex items-center">
-            <a href="#" className="inline-flex items-center gap-3 py-1" aria-label="Xenox Home">
+            <a href="#" className="inline-block py-1" aria-label="Home">
               <img
                 src={brand.logo}
-                alt="Xenox Logo"
+                alt="Logo"
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-display font-bold tracking-tight text-[#0A1329] text-xl">
-                Xenox
-              </span>
             </a>
           </div>
 

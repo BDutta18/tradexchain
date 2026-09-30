@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { AxiomContractSimulator, StrategyWitnesses } from '../managed/axiom';
+import { AxiomContractSimulator, StrategyWitnesses } from '../managed/xenox';
 
 describe('Xenox Trade Compact Smart Contract Privacy & Verification Suite', () => {
   const defaultWitnesses: StrategyWitnesses = {

@@ -29,8 +29,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Xenox Trade — Deployed Compact Contract v1.3.0 on Midnight Testnet
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Contract Source  : ./contracts/axiom.compact (v1.3.0 Supermoon Edition)
-  Managed Bindings : ./managed/axiom.ts
+  Contract Source  : ./contracts/xenox.compact (v1.3.0 Supermoon Edition)
+  Managed Bindings : ./managed/xenox.ts
   Preprod Contract : 0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
   Active Circuits  : commitStrategy, tripCircuitBreaker, resetCircuitBreaker,
                      executeTrade, executeBatchRebalance, revokeStrategy,
@@ -200,15 +200,15 @@ Open **`http://localhost:5173`** in your browser.
 
 | # | Test Suite | Test Name | What It Verifies |
 |:--|:---|:---|:---|
-| 1 | `axiom.test.ts` | Initial state empty | Validates ledger maps are clean before strategy commitment |
-| 2 | `axiom.test.ts` | Commit strategy stores hash | Verifies 32-byte commitment hash is recorded on ledger |
-| 3 | `axiom.test.ts` | Execute trade valid bounds | Validates trade within max position % and expiry passes ZK check |
-| 4 | `axiom.test.ts` | Execute trade exceeds position size | Rejects trade exceeding strategy max position limit |
-| 5 | `axiom.test.ts` | Execute trade after expiry | Rejects trade submitted after strategy timeline duration |
-| 6 | `axiom.test.ts` | Uncommitted agent trade | Prevents uncommitted callers from executing trades |
-| 7 | `axiom.test.ts` | Mint shielded vault balance | Validates client-side private `vUSD` note creation |
-| 8 | `axiom.test.ts` | Burn shielded vault balance | Validates client-side private `vUSD` note burning |
-| 9 | `axiom.test.ts` | Unshield and withdraw | Proves private note ownership and burns note for withdrawal |
+| 1 | `xenox.test.ts` | Initial state empty | Validates ledger maps are clean before strategy commitment |
+| 2 | `xenox.test.ts` | Commit strategy stores hash | Verifies 32-byte commitment hash is recorded on ledger |
+| 3 | `xenox.test.ts` | Execute trade valid bounds | Validates trade within max position % and expiry passes ZK check |
+| 4 | `xenox.test.ts` | Execute trade exceeds position size | Rejects trade exceeding strategy max position limit |
+| 5 | `xenox.test.ts` | Execute trade after expiry | Rejects trade submitted after strategy timeline duration |
+| 6 | `xenox.test.ts` | Uncommitted agent trade | Prevents uncommitted callers from executing trades |
+| 7 | `xenox.test.ts` | Mint shielded vault balance | Validates client-side private `vUSD` note creation |
+| 8 | `xenox.test.ts` | Burn shielded vault balance | Validates client-side private `vUSD` note burning |
+| 9 | `xenox.test.ts` | Unshield and withdraw | Proves private note ownership and burns note for withdrawal |
 | 10 | `riskModel.test.ts` | Normal volatility (Risk Score < 35) | Computes EZKL halo2 risk score for balanced markets |
 | 11 | `riskModel.test.ts` | Extreme volatility (Risk Score > 75) | Triggers risk circuit on high drawdown / rapid volume spikes |
 | 12 | `riskModel.test.ts` | ZK-ML halo2 proof generation | Validates client-side proof generation without witness leakage |
@@ -236,11 +236,11 @@ Open **`http://localhost:5173`** in your browser.
 | 34 | `zkBotEngine.test.ts` | MEV sandwich attack immunity | Proves $0.00 MEV extracted and 100% privacy preservation against mempool front-runners |
 | 35 | `zkBotEngine.test.ts` | Choppy consolidation ZK proofs | Generates valid 32-byte Halo2 ZK proof hashes without errors or witness leakage |
 | 36 | `zkBotEngine.test.ts` | Institutional ZK audit certificate | Produces cryptographically signed certificate matching Midnight Compact contract |
-| 37 | `axiom.test.ts` | Emergency circuit breaker trip & reset | Halts execution on catastrophic drawdown and resets after risk recalibration |
-| 38 | `axiom.test.ts` | Permanent strategy revocation | Permanently deactivates strategy commitment on-chain to allow key rotation |
-| 39 | `axiom.test.ts` | Private execution slippage bounds | Enforces execution slippage <= max private tolerance in zero-knowledge |
-| 40 | `axiom.test.ts` | Autonomous batch rebalance | Proves multi-position rebalance compliance in a single zero-knowledge proof |
-| 41 | `axiom.test.ts` | MEV shielded volume counter | Verifies cumulative volume tracking protected from mempool sandwiching |
+| 37 | `xenox.test.ts` | Emergency circuit breaker trip & reset | Halts execution on catastrophic drawdown and resets after risk recalibration |
+| 38 | `xenox.test.ts` | Permanent strategy revocation | Permanently deactivates strategy commitment on-chain to allow key rotation |
+| 39 | `xenox.test.ts` | Private execution slippage bounds | Enforces execution slippage <= max private tolerance in zero-knowledge |
+| 40 | `xenox.test.ts` | Autonomous batch rebalance | Proves multi-position rebalance compliance in a single zero-knowledge proof |
+| 41 | `xenox.test.ts` | MEV shielded volume counter | Verifies cumulative volume tracking protected from mempool sandwiching |
 | 42 | `analytics.test.ts` | stripPrivateFields zero leakage | Enforces client-side telemetry sanitizer strips private witnesses before broadcast |
 
 ```bash
@@ -248,7 +248,7 @@ Open **`http://localhost:5173`** in your browser.
 > vitest run
 
  ✓ tests/riskModel.test.ts (3 tests) 5ms
- ✓ tests/axiom.test.ts (14 tests) 8ms
+ ✓ tests/xenox.test.ts (14 tests) 8ms
  ✓ tests/riskFlowVerification.test.ts (2 tests) 5ms
  ✓ tests/analytics.test.ts (8 tests) 6ms
  ✓ tests/agent.test.ts (5 tests) 10ms

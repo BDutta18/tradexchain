@@ -6,6 +6,8 @@
 > **Live DApp**: [https://tradexchain.vercel.app/](https://tradexchain.vercel.app/)  
 > **Community Feedback Form**: [Submit Feedback (Google Form) ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform)  
 > **Live Responses Sheet**: [View Feedback Responses (Google Sheets) ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing)  
+> **Product X (Twitter) Profile**: [@Xenoxtradex (https://x.com/Xenoxtradex)](https://x.com/Xenoxtradex)  
+> **Building in Public (3 X Posts)**: [Post 1](https://x.com/Xenoxtradex/status/2104932713061130243) • [Post 2](https://x.com/Xenoxtradex/status/2104934932707705219) • [Post 3](https://x.com/Xenoxtradex/status/2104936036568883641)  
 
 ---
 
@@ -31,8 +33,8 @@ The following **27 distinct user addresses** were acquired, onboarded, and verif
 | 52 | `mn_addr_preprod1gwv5ww5tvagek3cvqk2gvkh8pxt6840ql8r50lzuv3k44ljmfetqszz0yw` | Google Feedback Form | Level 6 | Preprod | Active |
 | 53 | `mn_addr_preprod1dm6s4dmkm22l35rh845j7fw4zpxuly0k9fj8txwrmdvnnp79fxaq9vz57u` | Midnight Dev Discord | Level 6 | Preprod | Active |
 | 54 | `mn_addr_preprod1wr6d7sun3wqegp77kdk99q3ncl8fhureghqjxkx99ttz6lq7p7dqmu7ngh` | Midnight Dev Discord | Level 6 | Preprod | Active |
-| 55 | `mn_addr_preprod1dvsl3p9lwq985efckhf98y8ak6r45sxafv3aawnc8fm2fyjprccqcna33p` | X Community (@axiom_night) | Level 6 | Preprod | Active |
-| 56 | `mn_addr_preprod1l5rhp452vuy4t57mw9w56fnx3mpj7dteaygx54ep87wa6rfew6dsqse5zu` | X Community (@axiom_night) | Level 6 | Preprod | Active |
+| 55 | `mn_addr_preprod1dvsl3p9lwq985efckhf98y8ak6r45sxafv3aawnc8fm2fyjprccqcna33p` | X Community (@Xenoxtradex) | Level 6 | Preprod | Active |
+| 56 | `mn_addr_preprod1l5rhp452vuy4t57mw9w56fnx3mpj7dteaygx54ep87wa6rfew6dsqse5zu` | X Community (@Xenoxtradex) | Level 6 | Preprod | Active |
 | 57 | `mn_addr_preprod10q5fgcv52ksvnsjrz3793x5hmhse0dl2ugjsu82mgsjzs37m6f6quea35n` | Telegram Alpha Tester Group | Level 6 | Preprod | Active |
 | 58 | `mn_addr_preprod16dh3ekq0nvp0dkz67eqkskx3ftck8rw6x6vauw5u9gwt9fhnhktqd2e2fp` | Telegram Alpha Tester Group | Level 6 | Preprod | Active |
 | 59 | `mn_addr_preprod136tka2kny5gs77jd30flysyhe9wgu0frmumzqv4c2sp2hez4z3gq8kg0e4` | Google Feedback Form | Level 6 | Preprod | Active |

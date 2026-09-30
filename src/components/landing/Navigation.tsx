@@ -51,22 +51,15 @@ export function Navigation({
             isScrolled ? "h-14" : "h-20"
           }`}
         >
-          {/* Logo & Xenox Brand */}
-          <a href="#" className="flex items-center gap-3 group py-2" aria-label="Xenox Home">
+          {/* Logo ONLY */}
+          <a href="#" className="flex items-center group py-2" aria-label="Home">
             <img
               src={XENOX_CONTENT.brand.logo}
-              alt="Xenox Logo"
+              alt="Logo"
               className={`transition-all duration-500 object-contain ${
                 isScrolled ? "h-7" : "h-9"
               }`}
             />
-            <span
-              className={`font-display font-bold tracking-tight text-[#0A1329] transition-all duration-500 ${
-                isScrolled ? "text-xl" : "text-2xl"
-              }`}
-            >
-              Xenox
-            </span>
           </a>
 
           {/* Desktop Navigation: Architecture, Privacy Model, Docs ONLY */}
@@ -132,11 +125,30 @@ export function Navigation({
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`lg:hidden fixed inset-0 bg-white/95 backdrop-blur-2xl z-40 transition-all duration-500 ${
+        className={`lg:hidden fixed inset-0 bg-white/98 backdrop-blur-2xl z-50 transition-all duration-500 ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         style={{ top: 0 }}
       >
+        {/* Mobile Drawer Top Header: Logo on left, prominent Cross in top right */}
+        <div className="absolute top-0 left-0 right-0 h-20 px-6 flex items-center justify-between border-b border-slate-100 bg-white/90 backdrop-blur-md">
+          <div className="flex items-center">
+            <img
+              src={XENOX_CONTENT.brand.logo}
+              alt="Logo"
+              className="h-8 w-auto object-contain"
+            />
+          </div>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="p-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-[#0A1329] transition-colors cursor-pointer flex items-center justify-center shadow-sm"
+            aria-label="Close menu"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
         <div className="flex flex-col h-full px-8 pt-28 pb-8">
           <div className="flex-1 flex flex-col justify-center gap-6">
             {navLinks.map((link) => (
