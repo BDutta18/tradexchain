@@ -94,6 +94,8 @@ Traditional algorithmic trading bots require exposing limit prices, stop-losses,
 | 📏 **Strategy Duration & Expiry** | Private witness inside ZK circuit | Keeps time-horizon and algorithmic rebalancing private |
 | ⚡ **Slippage Tolerance (BPS)** | Private witness verified in ZK | Prevents MEV searchers from extracting sandwich value |
 | 🔑 **Wallet Secret Key** | Local witness only via `localSecretKey()` | Stays strictly in the browser extension |
+| 📊 **Target Asset Allocation** | Private witness evaluated in ZKIR | Hides portfolio asset distribution and algorithmic rebalancing weights |
+| 🎯 **Stop-Loss & Take-Profit Triggers** | Private witness inside ZK circuit | Prevents predatory bots from detecting trigger levels and hunting stops |
 
 ### What the User PROVES Without Revealing
 

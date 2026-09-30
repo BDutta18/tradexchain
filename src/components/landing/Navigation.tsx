@@ -10,6 +10,7 @@ interface NavigationProps {
 }
 
 const navLinks = [
+  { name: "How It Works", href: "#how-it-works" },
   { name: "Architecture", href: "#architecture" },
   { name: "Privacy Model", href: "#privacy-model" },
   { name: "Docs", href: "#docs" },

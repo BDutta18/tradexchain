@@ -24,8 +24,11 @@ export function FooterSection() {
             </a>
           </div>
 
-          {/* Navigation Links: Architecture, Privacy Model, Docs ONLY */}
+          {/* Navigation Links: How It Works, Architecture, Privacy Model, Docs ONLY */}
           <div className="flex flex-wrap items-center gap-6 text-xs font-mono uppercase tracking-wider text-slate-600">
+            <a href="#how-it-works" className="hover:text-[#0A1329] transition-colors">
+              How It Works
+            </a>
             <a href="#architecture" className="hover:text-[#0A1329] transition-colors">
               Architecture
             </a>

@@ -147,6 +147,8 @@ export const XENOX_CONTENT = {
       { item: "Trade Count", type: "Counter integer", reveals: "Total number of valid trades executed under this strategy" },
       { item: "MEV Shield Volume", type: "Counter USD", reveals: "Cumulative trading volume shielded from front-running/sandwiching" },
       { item: "Commitment Hash", type: "Bytes<32> hash", reveals: "Public cryptographic anchor for zero-knowledge witness proofs" },
+      { item: "Block Timestamp", type: "Unix timestamp", reveals: "Consensus block time when the zero-knowledge transition was anchored" },
+      { item: "Proof Verification Flag", type: "Boolean flag", reveals: "Consensus verification result of the Midnight ZKIR constraint system" },
     ],
     cannotLearn: [
       { item: "Strategy Risk Parameters", protection: "Private witness — never leaves browser", why: "Competitors and bots cannot front-run stop-loss triggers" },
@@ -156,6 +158,8 @@ export const XENOX_CONTENT = {
       { item: "Strategy Duration & Expiry", protection: "Private witness inside ZK circuit", why: "Keeps time-horizon and algorithmic rebalancing private" },
       { item: "Slippage Tolerance (BPS)", protection: "Private witness verified in ZK", why: "Prevents MEV searchers from extracting sandwich value" },
       { item: "Wallet Secret Key", protection: "Local witness only via localSecretKey()", why: "Stays strictly in the browser extension" },
+      { item: "Target Asset Allocation", protection: "Private witness evaluated in ZKIR", why: "Hides portfolio asset distribution and algorithmic rebalancing weights" },
+      { item: "Stop-Loss & Take-Profit Triggers", protection: "Private witness inside ZK circuit", why: "Prevents predatory bots from detecting trigger levels and hunting stops" },
     ],
     userProves: [
       { circuit: "commitStrategy", statement: "commitment == hash(maxPos, stopLoss, expiry)", witnesses: "maxPositionPct, stopLossPct, timelineExpiry" },
