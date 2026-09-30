@@ -122,12 +122,12 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
 
         {/* Interactive MacBook Terminal in White & Navy Blue */}
         <div
-          className={`transition-all duration-1000 delay-400 ${
+          className={`w-full max-w-4xl mx-auto transition-all duration-1000 delay-400 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <div className="mb-3 flex items-center justify-start">
-            <span className="text-[11px] font-mono uppercase tracking-widest text-[#1E3A8A] bg-blue-50/80 border border-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2 font-medium">
+          <div className="mb-3.5 flex items-center justify-start text-left">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-[#1E3A8A] bg-blue-50/80 border border-blue-200/60 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2 font-medium shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               On-Chain Execution Simulator
             </span>
