@@ -14,9 +14,8 @@ const navLinks = [
   { name: "How It Works", href: "#how-it-works" },
   { name: "Privacy Model", href: "#privacy-model" },
   { name: "Architecture", href: "#architecture" },
-  { name: "Tests (42/42)", href: "#tests" },
-  { name: "CI/CD", href: "#cicd" },
-  { name: "Checklist", href: "#checklist" },
+  { name: "Verification", href: "#verification" },
+  { name: "Setup", href: "#setup" },
 ];
 
 export function Navigation({
@@ -46,7 +45,7 @@ export function Navigation({
         className={`mx-auto transition-all duration-500 rounded-full ${
           isScrolled || isMobileMenuOpen
             ? "glass-navbar max-w-[1280px]"
-            : "bg-white/80 backdrop-blur-xl border border-black/[0.08] shadow-sm max-w-[1400px]"
+            : "bg-white/90 backdrop-blur-xl border border-[#0A1931]/10 shadow-sm max-w-[1400px]"
         }`}
       >
         <div
@@ -64,7 +63,7 @@ export function Navigation({
               }`}
             />
             <span
-              className={`font-display font-bold tracking-tight text-black transition-all duration-500 ${
+              className={`font-display font-bold tracking-tight text-[#0A1329] transition-all duration-500 ${
                 isScrolled ? "text-xl" : "text-2xl"
               }`}
             >
@@ -78,10 +77,10 @@ export function Navigation({
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs font-mono font-medium text-zinc-700 hover:text-black transition-colors duration-200 relative group uppercase tracking-wider"
+                className="text-xs font-mono font-medium text-slate-600 hover:text-[#0A1329] transition-colors duration-200 relative group uppercase tracking-wider"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full rounded-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0A1931] transition-all duration-300 group-hover:w-full rounded-full" />
               </a>
             ))}
           </div>
@@ -92,35 +91,40 @@ export function Navigation({
               href={XENOX_CONTENT.urls.githubRepo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-mono text-zinc-700 hover:text-black flex items-center gap-1 transition-colors px-3 py-1.5 rounded-full hover:bg-black/5"
+              className="text-xs font-mono text-slate-600 hover:text-[#0A1329] flex items-center gap-1 transition-colors px-3 py-1.5 rounded-full hover:bg-slate-100"
             >
               GitHub
               <ArrowUpRight size={13} />
             </a>
-            <a
-              href={XENOX_CONTENT.urls.xProfile}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-mono text-zinc-700 hover:text-black flex items-center gap-1 transition-colors px-3 py-1.5 rounded-full hover:bg-black/5"
-            >
-              X (@Xenoxtradex)
-              <ArrowUpRight size={13} />
-            </a>
+
             <button
               onClick={walletConnected ? onEnterDashboard : onConnectWallet || onEnterDashboard}
-              className={`bg-black hover:bg-zinc-800 text-white rounded-full font-mono text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-2 ${
+              className={`bg-[#0A1931] hover:bg-[#132A52] text-white rounded-full font-mono text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer ${
                 isScrolled ? "px-4 h-9" : "px-5 h-10"
               }`}
             >
-              <ShieldCheck size={14} className="text-emerald-400" />
-              {walletConnected ? "Open Terminal" : "Launch App"}
+              {walletConnected ? (
+                <>
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>
+                    {walletAddress
+                      ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
+                      : "Connected"}
+                  </span>
+                </>
+              ) : (
+                <>
+                  <ShieldCheck size={14} className="text-sky-300" />
+                  <span>Launch App</span>
+                </>
+              )}
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-black"
+            className="lg:hidden p-2 text-[#0A1329]"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

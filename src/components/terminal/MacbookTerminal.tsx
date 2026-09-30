@@ -127,38 +127,38 @@ export function MacbookTerminal() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto mac-terminal">
-      {/* MacBook Title Bar */}
-      <div className="mac-titlebar flex items-center justify-between">
+    <div className="w-full max-w-4xl mx-auto mac-terminal border border-[#1E3A8A]/30 shadow-2xl">
+      {/* MacBook Title Bar - Navy Blue Gradient */}
+      <div className="mac-titlebar flex items-center justify-between bg-gradient-to-r from-[#0F1F3D] via-[#13274F] to-[#0F1F3D] border-b border-[#1E3A8A]/40 px-4 py-3">
         <div className="mac-traffic-lights">
           <span className="mac-dot mac-dot-close" />
           <span className="mac-dot mac-dot-minimize" />
           <span className="mac-dot mac-dot-maximize" />
         </div>
 
-        <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
-          <TerminalIcon size={12} className="text-zinc-500" />
+        <div className="flex items-center gap-2 text-xs font-mono text-slate-300">
+          <TerminalIcon size={12} className="text-sky-400" />
           <span>trader@midnight: ~/xenox-protocol — step {currentStepIndex + 1} of {DEMO_STEPS.length}</span>
         </div>
 
         <div className="flex items-center gap-2">
           <button
             onClick={() => setIsAutoPlay(!isAutoPlay)}
-            className="text-xs font-mono text-zinc-400 hover:text-white p-1 rounded hover:bg-zinc-800 transition-colors"
+            className="text-xs font-mono text-slate-300 hover:text-white p-1 rounded hover:bg-[#1E3A8A]/40 transition-colors cursor-pointer"
             title={isAutoPlay ? "Pause Auto-play" : "Resume Auto-play"}
           >
-            <Play size={12} className={isAutoPlay ? "text-emerald-400" : ""} />
+            <Play size={12} className={isAutoPlay ? "text-sky-400" : ""} />
           </button>
           <button
             onClick={handleReset}
-            className="text-xs font-mono text-zinc-400 hover:text-white p-1 rounded hover:bg-zinc-800 transition-colors"
+            className="text-xs font-mono text-slate-300 hover:text-white p-1 rounded hover:bg-[#1E3A8A]/40 transition-colors cursor-pointer"
             title="Reset Terminal"
           >
             <RotateCcw size={12} />
           </button>
           <button
             onClick={handleCopy}
-            className="text-xs font-mono text-zinc-400 hover:text-white flex items-center gap-1 p-1 rounded hover:bg-zinc-800 transition-colors"
+            className="text-xs font-mono text-slate-300 hover:text-white flex items-center gap-1 p-1 rounded hover:bg-[#1E3A8A]/40 transition-colors cursor-pointer"
             title="Copy Terminal Output"
           >
             {copied ? <Check size={12} className="text-emerald-400" /> : <Copy size={12} />}
@@ -166,10 +166,10 @@ export function MacbookTerminal() {
         </div>
       </div>
 
-      {/* Terminal Step Progress Indicator */}
-      <div className="bg-[#12151d] px-4 py-2 border-b border-zinc-800/80 flex items-center justify-between text-[11px] font-mono">
+      {/* Terminal Step Progress Indicator - Navy Blue Subheader */}
+      <div className="bg-[#0B172E] px-4 py-2 border-b border-[#1E3A8A]/30 flex items-center justify-between text-[11px] font-mono">
         <div className="flex items-center gap-3">
-          <span className="text-zinc-500">ZK Workflow:</span>
+          <span className="text-slate-400">ZK Workflow:</span>
           {DEMO_STEPS.map((_, i) => (
             <button
               key={i}
@@ -179,39 +179,39 @@ export function MacbookTerminal() {
                 setTypedChars(0);
                 setIsTyping(true);
               }}
-              className={`transition-colors ${
+              className={`px-1.5 py-0.5 rounded transition-all cursor-pointer ${
                 i === currentStepIndex
-                  ? "text-emerald-400 font-bold"
+                  ? "bg-[#1E3A8A]/50 text-sky-300 font-bold border border-sky-400/40"
                   : i < currentStepIndex
-                  ? "text-cyan-400"
-                  : "text-zinc-600 hover:text-zinc-400"
+                  ? "text-sky-400"
+                  : "text-slate-400 hover:text-white"
               }`}
             >
               {`0${i + 1}`}
             </button>
           ))}
         </div>
-        <span className="text-zinc-500 hidden sm:inline flex items-center gap-1.5">
-          <Sparkles size={11} className="text-purple-400" />
+        <span className="text-slate-300 hidden sm:inline flex items-center gap-1.5 font-medium">
+          <Sparkles size={11} className="text-sky-400" />
           Midnight Compact v1.3.0 ZKIR
         </span>
       </div>
 
-      {/* Terminal Body */}
+      {/* Terminal Body - Deep Navy */}
       <div
         ref={terminalBodyRef}
-        className="p-6 font-mono text-[13px] leading-relaxed overflow-y-auto max-h-[380px] bg-[#0a0c10]"
+        className="p-6 font-mono text-[13px] leading-relaxed overflow-y-auto max-h-[380px] bg-[#070E1C]"
       >
         {/* Previous commands & outputs */}
         {history.map((item, idx) => (
           <div key={idx} className="mb-4">
-            <div className="flex items-center text-zinc-300">
-              <span className="text-emerald-400 select-none mr-2 font-bold">❯</span>
-              <span className="text-zinc-100">{item.cmd}</span>
+            <div className="flex items-center text-slate-200">
+              <span className="text-sky-400 select-none mr-2 font-bold">❯</span>
+              <span className="text-white font-medium">{item.cmd}</span>
             </div>
-            <div className="mt-1.5 space-y-1 pl-4 border-l border-zinc-800">
+            <div className="mt-1.5 space-y-1 pl-4 border-l border-[#1E3A8A]/40">
               {item.output.map((out, oIdx) => (
-                <div key={oIdx} className={out.color || "text-zinc-300"}>
+                <div key={oIdx} className={out.color || "text-slate-300"}>
                   {out.text}
                 </div>
               ))}
@@ -221,13 +221,13 @@ export function MacbookTerminal() {
 
         {/* Current typing command */}
         <div>
-          <div className="flex items-center text-zinc-300">
-            <span className="text-emerald-400 select-none mr-2 font-bold">❯</span>
-            <span className="text-zinc-100">
+          <div className="flex items-center text-slate-200">
+            <span className="text-sky-400 select-none mr-2 font-bold">❯</span>
+            <span className="text-white font-medium">
               {currentStep.cmd.slice(0, typedChars)}
               <span
-                className={`inline-block w-2 h-4 bg-emerald-400 ml-0.5 align-middle ${
-                  isTyping ? "animate-terminal-blink" : ""
+                className={`inline-block w-2 h-4 bg-sky-400 ml-0.5 align-middle ${
+                  isTyping ? "animate-pulse" : ""
                 }`}
               />
             </span>

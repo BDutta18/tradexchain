@@ -4,14 +4,10 @@ import { HeroSection } from "./landing/HeroSection";
 import { DeployedContractSection } from "./landing/DeployedContractSection";
 import { WhatItDoesSection } from "./landing/WhatItDoesSection";
 import { PrivacyModelSection } from "./landing/PrivacyModelSection";
-import { PrivacyClaimSection } from "./landing/PrivacyClaimSection";
 import { ArchitectureSection } from "./landing/ArchitectureSection";
 import { TechStackSection } from "./landing/TechStackSection";
 import { WalletSetupSection } from "./landing/WalletSetupSection";
-import { TestCoverageSection } from "./landing/TestCoverageSection";
-import { CiCdSection } from "./landing/CiCdSection";
-import { Level6ChecklistSection } from "./landing/Level6ChecklistSection";
-import { UserValidationSection } from "./landing/UserValidationSection";
+import { VerificationSection } from "./landing/VerificationSection";
 import { CommunityLinksSection } from "./landing/CommunityLinksSection";
 import { CtaSection } from "./landing/CtaSection";
 import { FooterSection } from "./landing/FooterSection";
@@ -30,7 +26,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   walletAddress,
 }) => {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-white text-black font-sans selection:bg-black selection:text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-white text-[#0A1329] font-sans selection:bg-[#0A1931] selection:text-white">
       {/* Floating Glass Pill Navigation */}
       <Navigation
         walletConnected={walletConnected}
@@ -39,10 +35,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         onEnterDashboard={onEnterDashboard}
       />
 
-      {/* Hero Section with Interactive Terminal & ASCII Sphere */}
-      <HeroSection onEnterDashboard={onEnterDashboard} />
+      {/* Hero Section with Interactive White & Navy Blue MacBook Terminal */}
+      <HeroSection
+        walletConnected={walletConnected}
+        onConnectWallet={onConnectWallet}
+        onEnterDashboard={onEnterDashboard}
+      />
 
-      {/* Preprod Contract Status Board */}
+      {/* Preprod Contract Status Board in Deep Navy */}
       <DeployedContractSection />
 
       {/* 5-Stage Zero-Knowledge Execution Flow */}
@@ -51,31 +51,19 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       {/* Privacy Model Bento Grid */}
       <PrivacyModelSection />
 
-      {/* Cryptographic Privacy Assurance Quote */}
-      <PrivacyClaimSection />
-
-      {/* 3-Stage System Architecture & Protocol Health Board */}
+      {/* System Architecture & Subsystems Board */}
       <ArchitectureSection />
 
       {/* Production Tech Stack Marquee */}
       <TechStackSection />
 
-      {/* Developer & Wallet Setup Steps with Terminal */}
+      {/* Developer & Wallet Setup with Navy Blue Terminal */}
       <WalletSetupSection />
 
-      {/* 42/42 Vitest Test Verification Matrix */}
-      <TestCoverageSection />
+      {/* Consolidated Verification Matrix (42 Tests, 5 CI Jobs, Checklist, 77 Users) */}
+      <VerificationSection />
 
-      {/* Automated 5-Job CI/CD Matrix */}
-      <CiCdSection />
-
-      {/* Supermoon Level 6 Bounty Submission Checklist */}
-      <Level6ChecklistSection />
-
-      {/* 77 Real Preprod Addresses Testnet Validation */}
-      <UserValidationSection />
-
-      {/* Public Artifacts, Feedback & Community Links */}
+      {/* Public Artifacts & Community Resources */}
       <CommunityLinksSection />
 
       {/* Call to Action with 3D Wireframe ASCII Tetrahedron */}
