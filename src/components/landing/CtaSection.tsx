@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AnimatedTetrahedron } from "../canvas/AnimatedTetrahedron";
-import { XENOX_CONTENT } from "../../content/xenox";
 
 interface CtaSectionProps {
   onEnterDashboard?: () => void;
@@ -36,7 +35,7 @@ export function CtaSection({ onEnterDashboard }: CtaSectionProps) {
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="flex-1 max-w-xl">
               <span className="font-mono text-xs uppercase tracking-widest text-[#1E3A8A] block mb-3 font-semibold">
-                Midnight Preprod MVP
+                Confidential Protocol
               </span>
               <h2 className="text-3xl lg:text-6xl font-display tracking-tight text-[#0A1329] mb-4 leading-[0.96]">
                 Ready to trade in
@@ -44,34 +43,18 @@ export function CtaSection({ onEnterDashboard }: CtaSectionProps) {
                 Zero-Knowledge?
               </h2>
               <p className="text-sm lg:text-base text-slate-600 leading-relaxed mb-6 font-sans">
-                State your risk boundaries once. Every trade after is mathematically proven in Zero-Knowledge on Midnight Preprod — with 0% strategy exposure and zero front-running.
+                State risk parameters once. Every trade after is mathematically proven in Zero-Knowledge — with zero strategy exposure and zero front-running.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-start gap-3">
+              <div>
                 <button
                   type="button"
                   onClick={onEnterDashboard}
-                  className="inline-flex items-center justify-center bg-[#0A1931] hover:bg-[#132A52] text-white px-7 h-12 text-xs font-mono font-semibold uppercase tracking-wider rounded-full transition-all hover:-translate-y-0.5 group shadow-md cursor-pointer"
+                  className="inline-flex items-center justify-center bg-[#0A1931] hover:bg-[#132A52] text-white px-8 h-12 text-xs font-mono font-semibold uppercase tracking-wider rounded-full transition-all hover:-translate-y-0.5 group shadow-md cursor-pointer"
                 >
-                  Launch Xenox DApp
+                  Launch App
                   <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                 </button>
-                <a
-                  href={XENOX_CONTENT.urls.demoVideo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-12 px-6 text-xs font-mono font-semibold uppercase tracking-wider rounded-full border border-[#0A1931]/20 hover:bg-[#0A1931]/5 transition-colors text-[#0A1931]"
-                >
-                  <Play className="w-3.5 h-3.5 mr-2 fill-current" />
-                  Watch Demo Video
-                </a>
-              </div>
-
-              <div className="mt-6 flex items-center gap-2 text-xs font-mono text-slate-400">
-                <span>Contract:</span>
-                <code className="text-slate-600 select-all truncate max-w-xs">
-                  {XENOX_CONTENT.contract.address}
-                </code>
               </div>
             </div>
 

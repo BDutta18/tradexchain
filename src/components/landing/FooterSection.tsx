@@ -2,7 +2,7 @@ import { AnimatedWave } from "../canvas/AnimatedWave";
 import { XENOX_CONTENT } from "../../content/xenox";
 
 export function FooterSection() {
-  const { brand, footer } = XENOX_CONTENT;
+  const { brand, urls, footer } = XENOX_CONTENT;
 
   return (
     <footer className="relative border-t border-[#0A1931]/10 bg-white overflow-hidden pt-14 pb-10">
@@ -24,11 +24,8 @@ export function FooterSection() {
             </a>
           </div>
 
-          {/* Navigation Links */}
+          {/* Navigation Links: Architecture, Privacy Model, Docs ONLY */}
           <div className="flex flex-wrap items-center gap-6 text-xs font-mono uppercase tracking-wider text-slate-600">
-            <a href="#how-it-works" className="hover:text-[#0A1329] transition-colors">
-              How It Works
-            </a>
             <a href="#architecture" className="hover:text-[#0A1329] transition-colors">
               Architecture
             </a>

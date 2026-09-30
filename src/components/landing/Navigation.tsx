@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ShieldCheck } from "lucide-react";
+import { Menu, X, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { XENOX_CONTENT } from "../../content/xenox";
 
 interface NavigationProps {
@@ -10,7 +10,6 @@ interface NavigationProps {
 }
 
 const navLinks = [
-  { name: "How It Works", href: "#how-it-works" },
   { name: "Architecture", href: "#architecture" },
   { name: "Privacy Model", href: "#privacy-model" },
   { name: "Docs", href: "#docs" },
@@ -62,7 +61,7 @@ export function Navigation({
             />
           </a>
 
-          {/* Desktop Navigation: How It Works, Architecture, Privacy Model, Docs ONLY */}
+          {/* Desktop Navigation: Architecture, Privacy Model, Docs ONLY */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -76,8 +75,18 @@ export function Navigation({
             ))}
           </div>
 
-          {/* Desktop CTA: Launch App ONLY (No GitHub, No X) */}
-          <div className="hidden md:flex items-center">
+          {/* Desktop Top Right: GitHub ↗ and Launch App ONLY */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={XENOX_CONTENT.urls.githubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-mono font-semibold text-slate-600 hover:text-[#0A1329] flex items-center gap-1 transition-colors px-3 py-1.5 rounded-full hover:bg-slate-100 uppercase tracking-wider"
+            >
+              GitHub
+              <ArrowUpRight size={13} />
+            </a>
+
             <button
               onClick={walletConnected ? onEnterDashboard : onConnectWallet || onEnterDashboard}
               className={`bg-[#0A1931] hover:bg-[#132A52] text-white rounded-full font-mono text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer ${
@@ -132,6 +141,14 @@ export function Navigation({
                 {link.name}
               </a>
             ))}
+            <a
+              href={XENOX_CONTENT.urls.githubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl font-mono text-slate-600 hover:text-[#0A1329] transition-colors flex items-center gap-1 uppercase tracking-wider"
+            >
+              GitHub <ArrowUpRight size={16} />
+            </a>
           </div>
 
           <button

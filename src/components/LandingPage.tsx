@@ -1,7 +1,6 @@
 import React from "react";
 import { Navigation } from "./landing/Navigation";
 import { HeroSection } from "./landing/HeroSection";
-import { WhatItDoesSection } from "./landing/WhatItDoesSection";
 import { ArchitectureSection } from "./landing/ArchitectureSection";
 import { PrivacyModelSection } from "./landing/PrivacyModelSection";
 import { DocsSection } from "./landing/DocsSection";
@@ -23,7 +22,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 }) => {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-white text-[#0A1329] font-sans selection:bg-[#0A1931] selection:text-white">
-      {/* Floating Glass Pill Navigation with Logo ONLY, How It Works, Architecture, Privacy Model, Docs */}
+      {/* Floating Glass Pill Navigation with Logo ONLY, Architecture, Privacy Model, Docs, Top-Right GitHub & Launch App */}
       <Navigation
         walletConnected={walletConnected}
         walletAddress={walletAddress}
@@ -31,15 +30,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         onEnterDashboard={onEnterDashboard}
       />
 
-      {/* Hero Section with Interactive White & Navy Blue MacBook Terminal */}
+      {/* Hero Section with Clean Typography, Short Floating Text & Interactive White & Navy Blue Terminal */}
       <HeroSection
         walletConnected={walletConnected}
         onConnectWallet={onConnectWallet}
         onEnterDashboard={onEnterDashboard}
       />
-
-      {/* How It Works: 5-Stage Zero-Knowledge Execution Flow */}
-      <WhatItDoesSection />
 
       {/* System Architecture & Subsystems Board */}
       <ArchitectureSection />

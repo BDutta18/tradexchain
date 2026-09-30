@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AnimatedSphere } from "../canvas/AnimatedSphere";
 import { MacbookTerminal } from "../terminal/MacbookTerminal";
 import { XENOX_CONTENT } from "../../content/xenox";
@@ -9,6 +9,13 @@ interface HeroSectionProps {
   onConnectWallet?: () => void;
   walletConnected?: boolean;
 }
+
+const SHORT_FLOATING_TEXT = [
+  "100% Private Alpha",
+  "$0.00 MEV Extracted",
+  "Zero Strategy Leakage",
+  "Client-Side Proving",
+];
 
 export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected }: HeroSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,7 +67,7 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 pt-4 pb-8">
-        {/* Clean Eyebrow */}
+        {/* Eyebrow */}
         <div
           className={`mb-6 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -68,7 +75,7 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
         >
           <span className="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-[#1E3A8A] font-semibold">
             <span className="w-8 h-px bg-[#1E3A8A]/50" />
-            Midnight Preprod · Zero-Knowledge Trading Protocol
+            Zero-Knowledge Trading Protocol
           </span>
         </div>
 
@@ -103,35 +110,28 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
           </h1>
         </div>
 
-        {/* Tagline & Production CTAs */}
-        <div className="grid lg:grid-cols-12 gap-8 items-center mb-12">
+        {/* Tagline & Production Action (ONLY Launch App Button) */}
+        <div className="grid lg:grid-cols-12 gap-8 items-center mb-10">
           <p
             className={`lg:col-span-8 border-l-2 border-[#1E3A8A]/40 pl-5 text-base lg:text-lg text-slate-600 leading-relaxed font-sans transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Institutional-grade privacy on Midnight. Define risk in natural language, prove execution in Zero-Knowledge with zero strategy rules or portfolio balances exposed to mempools.
+            Institutional-grade privacy. Define risk in natural language, prove execution in Zero-Knowledge with zero strategy rules or portfolio balances exposed to mempools.
           </p>
 
           <div
-            className={`lg:col-span-4 flex flex-wrap gap-3 transition-all duration-700 delay-300 ${
+            className={`lg:col-span-4 flex items-center transition-all duration-700 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
             <button
               onClick={walletConnected ? onEnterDashboard : onConnectWallet || onEnterDashboard}
-              className="inline-flex items-center justify-center bg-[#0A1931] hover:bg-[#132A52] text-white px-7 h-12 text-xs font-mono font-semibold uppercase tracking-wider rounded-full transition-all hover:-translate-y-0.5 group shadow-xl cursor-pointer"
+              className="inline-flex items-center justify-center bg-[#0A1931] hover:bg-[#132A52] text-white px-8 h-13 text-xs font-mono font-semibold uppercase tracking-wider rounded-full transition-all hover:-translate-y-0.5 group shadow-xl cursor-pointer"
             >
               {walletConnected ? "Open Terminal" : "Launch App"}
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </button>
-            <a
-              href="#docs"
-              className="inline-flex items-center justify-center h-12 px-6 text-xs font-mono font-semibold uppercase tracking-wider rounded-full border border-[#0A1931]/20 hover:bg-[#0A1931]/5 text-[#0A1931] transition-colors"
-            >
-              <BookOpen size={13} className="mr-2" />
-              Docs
-            </a>
           </div>
         </div>
 
@@ -144,31 +144,28 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
           <div className="mb-3 text-center">
             <span className="text-[11px] font-mono uppercase tracking-widest text-[#1E3A8A] bg-blue-50/80 border border-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2 font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              Verifiable On-Chain Execution Simulator
+              On-Chain Execution Simulator
             </span>
           </div>
           <MacbookTerminal />
         </div>
       </div>
 
-      {/* Marquee Ticker - Deep Navy Banner */}
+      {/* Short Floating Marquee Ticker */}
       <div
-        className={`w-full mt-6 border-y border-[#1E3A8A]/30 py-3.5 bg-[#0B1528] text-white transition-all duration-700 delay-500 overflow-hidden ${
+        className={`w-full mt-6 border-y border-[#1E3A8A]/30 py-3 bg-[#0B1528] text-white transition-all duration-700 delay-500 overflow-hidden ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16 shrink-0 items-center">
-              {XENOX_CONTENT.hero.marqueeStats.map((stat, idx) => (
+        <div className="flex gap-12 marquee whitespace-nowrap">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex gap-12 shrink-0 items-center">
+              {SHORT_FLOATING_TEXT.map((text, idx) => (
                 <div key={idx} className="flex items-center gap-3">
-                  <span className="font-display text-2xl text-white font-semibold">
-                    {stat.value}
+                  <span className="font-display text-lg text-white font-medium">
+                    {text}
                   </span>
-                  <span className="text-xs font-mono text-slate-300 uppercase tracking-wider">
-                    {stat.label}
-                  </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 ml-8" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 ml-6" />
                 </div>
               ))}
             </div>
