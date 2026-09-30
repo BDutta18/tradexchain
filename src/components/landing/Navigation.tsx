@@ -51,15 +51,22 @@ export function Navigation({
             isScrolled ? "h-14" : "h-20"
           }`}
         >
-          {/* Logo ONLY (No text next to it) */}
-          <a href="#" className="flex items-center group py-2" aria-label="Home">
+          {/* Logo & Xenox Brand */}
+          <a href="#" className="flex items-center gap-3 group py-2" aria-label="Xenox Home">
             <img
               src={XENOX_CONTENT.brand.logo}
-              alt="Logo"
+              alt="Xenox Logo"
               className={`transition-all duration-500 object-contain ${
                 isScrolled ? "h-7" : "h-9"
               }`}
             />
+            <span
+              className={`font-display font-bold tracking-tight text-[#0A1329] transition-all duration-500 ${
+                isScrolled ? "text-xl" : "text-2xl"
+              }`}
+            >
+              Xenox
+            </span>
           </a>
 
           {/* Desktop Navigation: Architecture, Privacy Model, Docs ONLY */}

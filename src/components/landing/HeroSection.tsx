@@ -110,29 +110,15 @@ export function HeroSection({ onEnterDashboard, onConnectWallet, walletConnected
           </h1>
         </div>
 
-        {/* Tagline & Production Action (ONLY Launch App Button) */}
-        <div className="grid lg:grid-cols-12 gap-8 items-center mb-10">
+        {/* Tagline */}
+        <div className="mb-10 max-w-3xl">
           <p
-            className={`lg:col-span-8 border-l-2 border-[#1E3A8A]/40 pl-5 text-base lg:text-lg text-slate-600 leading-relaxed font-sans transition-all duration-700 delay-200 ${
+            className={`border-l-2 border-[#1E3A8A]/40 pl-5 text-base lg:text-lg text-slate-600 leading-relaxed font-sans transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
             Institutional-grade privacy. Define risk in natural language, prove execution in Zero-Knowledge with zero strategy rules or portfolio balances exposed to mempools.
           </p>
-
-          <div
-            className={`lg:col-span-4 flex items-center transition-all duration-700 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            <button
-              onClick={walletConnected ? onEnterDashboard : onConnectWallet || onEnterDashboard}
-              className="inline-flex items-center justify-center bg-[#0A1931] hover:bg-[#132A52] text-white px-8 h-13 text-xs font-mono font-semibold uppercase tracking-wider rounded-full transition-all hover:-translate-y-0.5 group shadow-xl cursor-pointer"
-            >
-              {walletConnected ? "Open Terminal" : "Launch App"}
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </button>
-          </div>
         </div>
 
         {/* Interactive MacBook Terminal in White & Navy Blue */}
