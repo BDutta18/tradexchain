@@ -1,14 +1,10 @@
 import React from "react";
 import { Navigation } from "./landing/Navigation";
 import { HeroSection } from "./landing/HeroSection";
-import { DeployedContractSection } from "./landing/DeployedContractSection";
 import { WhatItDoesSection } from "./landing/WhatItDoesSection";
-import { PrivacyModelSection } from "./landing/PrivacyModelSection";
 import { ArchitectureSection } from "./landing/ArchitectureSection";
-import { TechStackSection } from "./landing/TechStackSection";
-import { WalletSetupSection } from "./landing/WalletSetupSection";
-import { VerificationSection } from "./landing/VerificationSection";
-import { CommunityLinksSection } from "./landing/CommunityLinksSection";
+import { PrivacyModelSection } from "./landing/PrivacyModelSection";
+import { DocsSection } from "./landing/DocsSection";
 import { CtaSection } from "./landing/CtaSection";
 import { FooterSection } from "./landing/FooterSection";
 
@@ -27,7 +23,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 }) => {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-white text-[#0A1329] font-sans selection:bg-[#0A1931] selection:text-white">
-      {/* Floating Glass Pill Navigation */}
+      {/* Floating Glass Pill Navigation with Logo ONLY, How It Works, Architecture, Privacy Model, Docs */}
       <Navigation
         walletConnected={walletConnected}
         walletAddress={walletAddress}
@@ -42,34 +38,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         onEnterDashboard={onEnterDashboard}
       />
 
-      {/* Preprod Contract Status Board in Deep Navy */}
-      <DeployedContractSection />
-
-      {/* 5-Stage Zero-Knowledge Execution Flow */}
+      {/* How It Works: 5-Stage Zero-Knowledge Execution Flow */}
       <WhatItDoesSection />
-
-      {/* Privacy Model Bento Grid */}
-      <PrivacyModelSection />
 
       {/* System Architecture & Subsystems Board */}
       <ArchitectureSection />
 
-      {/* Production Tech Stack Marquee */}
-      <TechStackSection />
+      {/* Privacy Model Bento Grid: What Stays Private vs What Is Public */}
+      <PrivacyModelSection />
 
-      {/* Developer & Wallet Setup with Navy Blue Terminal */}
-      <WalletSetupSection />
-
-      {/* Consolidated Verification Matrix (42 Tests, 5 CI Jobs, Checklist, 77 Users) */}
-      <VerificationSection />
-
-      {/* Public Artifacts & Community Resources */}
-      <CommunityLinksSection />
+      {/* Docs Section: Interactive Protocol Architecture, ZK Circuits & Security Guides */}
+      <DocsSection />
 
       {/* Call to Action with 3D Wireframe ASCII Tetrahedron */}
       <CtaSection onEnterDashboard={onEnterDashboard} />
 
-      {/* Footer with Animated Wave Canvas */}
+      {/* Footer with Logo ONLY, Navigation Links & Copyright */}
       <FooterSection />
     </div>
   );
