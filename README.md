@@ -297,7 +297,7 @@ The Xenox Trade repository runs an automated 5-job GitHub Actions CI/CD matrix o
 | 2 | **Live demo link** | ✅ Complete | [https://tradexchain.vercel.app/](https://tradexchain.vercel.app/) |
 | 3 | **List of 70 Preprod user wallet addresses (verifiable on-chain)** | ✅ Complete | [`LAUNCH_USERS.md`](LAUNCH_USERS.md) • [`PREPROD-ADDRESSES.md`](PREPROD-ADDRESSES.md) • [`wallet.txt`](wallet.txt) (77 Active Addresses) |
 | 4 | **Feedback documentation or link to feedback document** | ✅ Complete | [`FEEDBACK.md`](FEEDBACK.md) • [`docs/FEEDBACK.md`](docs/FEEDBACK.md) • [Feedback Form ↗](https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform) • [Responses Sheet ↗](https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing) |
-| 5 | **Demo video showing full MVP functionality** | ✅ Complete | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing) |
+| 5 | **Demo video showing full MVP functionality** | ✅ Complete | [🎬 Watch on Google Drive ↗](https://drive.google.com/file/d/1zXDqzQajnqM6Sen3vBdNR5ON6FhffvZ4/view?usp=sharing) |
 | 6 | **Minimum 30 meaningful commits** | ✅ Complete | **33+ Commits** on [`main`](https://github.com/BDutta18/tradexchain/commits/main) |
 
 ---

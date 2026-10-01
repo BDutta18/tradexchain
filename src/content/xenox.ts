@@ -22,7 +22,7 @@ export const XENOX_CONTENT = {
     ciWorkflow: "https://github.com/BDutta18/tradexchain/actions/workflows/ci.yml",
     xProfile: "https://x.com/Xenoxtradex",
     xProfileHandle: "@Xenoxtradex",
-    demoVideo: "https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing",
+    demoVideo: "https://drive.google.com/file/d/1zXDqzQajnqM6Sen3vBdNR5ON6FhffvZ4/view?usp=sharing",
     feedbackForm: "https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform",
     feedbackSheet: "https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing",
     xPosts: [
@@ -225,7 +225,7 @@ export const XENOX_CONTENT = {
 
   resources: [
     { title: "Live Application (Vercel)", link: "https://tradexchain.vercel.app/", desc: "Production MVP deployed on Vercel (HTTP 200)", cta: "Launch DApp" },
-    { title: "Demo Video (Walkthrough)", link: "https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing", desc: "Full end-to-end MVP demonstration video on Google Drive", cta: "Watch Video" },
+    { title: "Demo Video (Walkthrough)", link: "https://drive.google.com/file/d/1zXDqzQajnqM6Sen3vBdNR5ON6FhffvZ4/view?usp=sharing", desc: "Full end-to-end MVP demonstration video on Google Drive", cta: "Watch Video" },
     { title: "User Feedback Form", link: "https://docs.google.com/forms/d/e/1FAIpQLSd49Nh4u3E2aRTkvyFOwtEFJ16D7d6QRRa_5E3Dp35Jbc6FzA/viewform", desc: "Public community feedback submission form", cta: "Submit Feedback" },
     { title: "Feedback Responses Sheet", link: "https://docs.google.com/spreadsheets/d/1qujhTE17XXua0rHCzS-PKuzAO7tRrAL6R3AaZmV28PU/edit?usp=sharing", desc: "Real-time aggregate feedback response spreadsheet", cta: "View Sheet" },
     { title: "Building in Public: X Post 1", link: "https://x.com/Xenoxtradex/status/2104932713061130243", desc: "Public development update 1 on X", cta: "View Post" },
@@ -326,7 +326,7 @@ export const XENOX_CONTENT = {
     { num: 2, req: "Live demo link", status: "Complete", linkText: "tradexchain.vercel.app", url: "https://tradexchain.vercel.app/" },
     { num: 3, req: "List of 70 Preprod user wallet addresses (verifiable on-chain)", status: "Complete", linkText: "LAUNCH_USERS.md (77 Active Addresses)", url: "https://github.com/BDutta18/tradexchain/blob/main/LAUNCH_USERS.md" },
     { num: 4, req: "Feedback documentation or link to feedback document", status: "Complete", linkText: "FEEDBACK.md & Google Form/Sheet", url: "https://github.com/BDutta18/tradexchain/blob/main/FEEDBACK.md" },
-    { num: 5, req: "Demo video showing full MVP functionality", status: "Complete", linkText: "Watch on Google Drive ↗", url: "https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing" },
+    { num: 5, req: "Demo video showing full MVP functionality", status: "Complete", linkText: "Watch on Google Drive ↗", url: "https://drive.google.com/file/d/1zXDqzQajnqM6Sen3vBdNR5ON6FhffvZ4/view?usp=sharing" },
     { num: 6, req: "Minimum 30 meaningful commits", status: "Complete", linkText: "33+ Commits on main ↗", url: "https://github.com/BDutta18/tradexchain/commits/main" },
   ],
 
@@ -346,7 +346,7 @@ export const XENOX_CONTENT = {
       Protocol: [
         { name: "Live DApp Terminal", href: "https://tradexchain.vercel.app/", external: true },
         { name: "Preprod Explorer", href: "https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43", external: true },
-        { name: "Walkthrough Demo", href: "https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing", external: true },
+        { name: "Walkthrough Demo", href: "https://drive.google.com/file/d/1zXDqzQajnqM6Sen3vBdNR5ON6FhffvZ4/view?usp=sharing", external: true },
         { name: "GitHub Repository", href: "https://github.com/BDutta18/tradexchain", external: true },
       ],
       Ecosystem: [
