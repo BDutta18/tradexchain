@@ -69,7 +69,7 @@ describe('Xenox Trade ZK Execution Bot & Institutional Backtest Studio', () => {
     const cert = generateZKAuditCertificate(mockConfig, result);
 
     expect(cert.certificateId).toMatch(/^XENOX-CERT-[A-Z0-9]+-\d+$/);
-    expect(cert.contractAddress).toBe('0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc');
+    expect(cert.contractAddress).toBe('0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43');
     expect(cert.network).toBe('Midnight Preprod Testnet');
     expect(cert.strategyCommitmentHash).toMatch(/^0x[a-f0-9]{64}$/);
     expect(cert.verificationHash).toMatch(/^0x[a-f0-9]{64}$/);

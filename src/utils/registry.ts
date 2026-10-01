@@ -25,7 +25,7 @@ export function getActiveContractAddress(network: 'preview' | 'preprod' | string
   // Fallback to active Preprod contract
   return (
     (typeof import.meta !== 'undefined' && (import.meta.env?.['VITE_PREPROD_CONTRACT_ADDRESS'] as string)) ||
-    '0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc'
+    '0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43'
   );
 }
 

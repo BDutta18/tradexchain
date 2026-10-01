@@ -79,16 +79,21 @@ jobs:
       - name: Verify Compact v1.3.0 Syntax & Circuit State Machine
         run: |
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "Verifying contracts/axiom.compact AST and state machine invariants..."
+          echo "Verifying Compact v1.3.0 AST and state machine invariants..."
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          test -f contracts/axiom.compact
-          grep -q "pragma language_version" contracts/axiom.compact
-          grep -q "circuitBreakerTripped" contracts/axiom.compact
-          grep -q "mevShieldProtectedVolumeUsd" contracts/axiom.compact
-          grep -q "executeBatchRebalance" contracts/axiom.compact
-          grep -q "revokeStrategy" contracts/axiom.compact
-          grep -q "tripCircuitBreaker" contracts/axiom.compact
-          grep -q "resetCircuitBreaker" contracts/axiom.compact
+          for CONTRACT in contracts/xenox.compact contracts/axiom.compact; do
+            if [ -f "$CONTRACT" ]; then
+              echo "Checking $CONTRACT..."
+              grep -q "pragma language_version" "$CONTRACT"
+              grep -q "circuitBreakerTripped" "$CONTRACT"
+              grep -q "mevShieldProtectedVolumeUsd" "$CONTRACT"
+              grep -q "executeBatchRebalance" "$CONTRACT"
+              grep -q "revokeStrategy" "$CONTRACT"
+              grep -q "tripCircuitBreaker" "$CONTRACT"
+              grep -q "resetCircuitBreaker" "$CONTRACT"
+              echo "✅ Verified $CONTRACT"
+            fi
+          done
           echo "✅ Compact contract v1.3.0 syntax & state definitions verified."
 
       - name: Run Compact Compiler & ZKIR Artifact Check

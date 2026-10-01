@@ -73,7 +73,7 @@ export const ZKExecutionBot: React.FC<ZKExecutionBotProps> = ({
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const tickCounterRef = useRef<number>(1);
 
-  const effectiveAgentId = walletAddress || '0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc';
+  const effectiveAgentId = walletAddress || '0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43';
 
   const currentConfig: BotConfig = {
     agentId: effectiveAgentId,

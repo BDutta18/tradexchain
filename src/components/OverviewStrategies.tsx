@@ -132,13 +132,13 @@ export const OverviewStrategies: React.FC<OverviewStrategiesProps> = ({
                     <span className="font-semibold text-gray-700">ZK Hash:</span>
                     <span className="truncate">{strat.commitmentHash}</span>
                     <a
-                      href="https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc"
+                      href="https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43"
                       target="_blank"
                       rel="noreferrer"
                       className="text-orange-600 hover:underline inline-flex items-center gap-0.5 font-bold shrink-0"
-                      title="View contract on 1AM Preprod Explorer"
+                      title="View contract on Midnight Preprod Explorer"
                     >
-                      <span>1AM Explorer</span>
+                      <span>Midnight Explorer</span>
                       <ExternalLink className="w-2.5 h-2.5" />
                     </a>
 

@@ -30,7 +30,7 @@ export const XENOX_CONTENT = {
       { id: "2", label: "Post 2", url: "https://x.com/Xenoxtradex/status/2104934932707705219" },
       { id: "3", label: "Post 3", url: "https://x.com/Xenoxtradex/status/2104936036568883641" },
     ],
-    preprodExplorer: "https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc",
+    preprodExplorer: "https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43",
     oneAmWallet: "https://1am.xyz",
     faucetUrl: "https://faucet.preprod.midnight.network",
   },
@@ -64,10 +64,10 @@ export const XENOX_CONTENT = {
   contract: {
     network: "Midnight Preprod Testnet",
     version: "v1.3.0 (Supermoon Edition)",
-    address: "0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc",
+    address: "0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43",
     status: "🟢 ACTIVE PREPROD MVP (v1.3.0 Supermoon)",
-    source: "./contracts/axiom.compact (v1.3.0 Supermoon Edition)",
-    bindings: "./managed/axiom.ts",
+    source: "./contracts/xenox.compact (v1.3.0 Supermoon Edition)",
+    bindings: "./managed/xenox.ts",
     circuits: [
       "commitStrategy",
       "tripCircuitBreaker",
@@ -345,7 +345,7 @@ export const XENOX_CONTENT = {
     columns: {
       Protocol: [
         { name: "Live DApp Terminal", href: "https://tradexchain.vercel.app/", external: true },
-        { name: "Preprod Explorer", href: "https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc", external: true },
+        { name: "Preprod Explorer", href: "https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43", external: true },
         { name: "Walkthrough Demo", href: "https://drive.google.com/file/d/1Ub70Yu4LhBrQ6Coc3Y4vKjs4lSZNEptv/view?usp=sharing", external: true },
         { name: "GitHub Repository", href: "https://github.com/BDutta18/tradexchain", external: true },
       ],

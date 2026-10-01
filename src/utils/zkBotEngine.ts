@@ -354,7 +354,7 @@ export function runScenarioBacktest(config: BotConfig, scenarioId: StressScenari
 export function generateZKAuditCertificate(config: BotConfig, result: BacktestResult): ZKAuditCertificate {
   const timestamp = new Date().toISOString();
   const certId = `XENOX-CERT-${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 9000 + 1000)}`;
-  const contractAddress = '0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc';
+  const contractAddress = '0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43';
 
   // Compute 32-byte strategy commitment hash identical to Compact circuit logic
   const strategyPreimage = `${config.maxPositionPct}-${config.stopLossPct}-${config.expiryHours}`;

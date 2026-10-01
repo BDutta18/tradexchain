@@ -3,7 +3,7 @@
     "preprod": [
       {
         "version": "1.3.0",
-        "contractAddress": "0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc",
+        "contractAddress": "0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43",
         "deployedAt": "2026-09-26T00:00:00.000Z",
         "commitHash": "0x08d1be213257a83e669706eef0f0645269264549",
         "circuits": [
@@ -24,7 +24,7 @@
     "preprod": [
       {
         "version": "1.3.0",
-        "contractAddress": "0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc",
+        "contractAddress": "0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43",
         "deployedAt": "2026-09-26T00:00:00.000Z",
         "commitHash": "0x08d1be213257a83e669706eef0f0645269264549",
         "circuits": [

@@ -124,13 +124,13 @@ export const TradeHistory: React.FC<TradeHistoryProps> = ({
           </div>
 
           <a
-            href="https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc"
+            href="https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43"
             target="_blank"
             rel="noreferrer"
             className="hidden sm:flex items-center gap-1.5 px-3.5 py-2.5 rounded-full bg-white hover:bg-gray-100 border border-gray-200 text-gray-800 text-xs font-bold transition-all shadow-xs cursor-pointer"
           >
             <Globe className="w-3.5 h-3.5 text-orange-500" />
-            <span>1AM Contract Explorer</span>
+            <span>Midnight Explorer</span>
             <ExternalLink className="w-3 h-3 text-gray-400" />
           </a>
 

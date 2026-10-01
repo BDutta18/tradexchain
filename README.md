@@ -23,7 +23,7 @@
 
 | Network | Version | Contract Address | Explorer Link | Status |
 |:--------|:--------|:-----------------|:--------------|:-------|
-| **Midnight Preprod Testnet** | `v1.3.0` | `0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc` | [View on 1AM Preprod Explorer ↗](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) | 🟢 **ACTIVE PREPROD MVP (v1.3.0 Supermoon)** |
+| **Midnight Preprod Testnet** | `v1.3.0` | `0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43` | [View on Midnight Explorer ↗](https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43) | 🟢 **ACTIVE PREPROD MVP (v1.3.0 Supermoon)** |
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -31,7 +31,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Contract Source  : ./contracts/xenox.compact (v1.3.0 Supermoon Edition)
   Managed Bindings : ./managed/xenox.ts
-  Preprod Contract : 0x2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
+  Preprod Contract : 0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43
   Active Circuits  : commitStrategy, tripCircuitBreaker, resetCircuitBreaker,
                      executeTrade, executeBatchRebalance, revokeStrategy,
                      mintVaultBalance, burnVaultBalance, unshieldWithdraw
