@@ -25,6 +25,12 @@
 |:--------|:--------|:-----------------|:--------------|:-------|
 | **Midnight Preprod Testnet** | `v1.3.0` | `0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43` | [View on Midnight Explorer ↗](https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43) | 🟢 **ACTIVE PREPROD MVP (v1.3.0 Supermoon)** |
 
+<p align="center">
+  <a href="https://preprod.midnightexplorer.com/transactions/0x6f2821acd41d2da77e39ab995a00e2718d76040cb07da0f5fbf62229f0c67b43">
+    <img src="public/contract-deployment.png" alt="Midnight Preprod Contract Deployment Transaction on Midnight Explorer" width="900" />
+  </a>
+</p>
+
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Xenox Trade — Deployed Compact Contract v1.3.0 on Midnight Testnet
